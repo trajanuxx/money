@@ -1,11 +1,7 @@
 <?php
-
-
-
-$local_sis=$_SERVER[PHP_SELF];
-$local_sis = explode("/",$local_sis);
-include $_SERVER[DOCUMENT_ROOT].$local_sis[1].'/inc/data/mysql.php';
-include $_SERVER[DOCUMENT_ROOT].$local_sis[1].'/inc/data/geral.php';
+require_once $_SERVER[DOCUMENT_ROOT].'money/config.php';
+require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/mysql.php';
+require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/geral.php';
 
 $generico = new Geral();
 $tabela=$_REQUEST['tabela'];

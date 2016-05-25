@@ -1,12 +1,4 @@
 <?php require_once("inc/init.php"); 
-session_start();
-
-
-if (!($_SESSION['usuario']=='trajanux')){
-	header("Location: login.php"); 
-}
-
-
 
 
 

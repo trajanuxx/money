@@ -1,11 +1,4 @@
 <?php require_once("inc/init.php"); 
-session_start();
-
-
-if (!($_SESSION['usuario']=='trajanux')){
-	header("Location: login.php"); 
-}
-
 
 ?>
 <style>
@@ -104,12 +97,12 @@ if (!($_SESSION['usuario']=='trajanux')){
 					var item = '';
 					item = item + '<div class="col-xs-2 col-md-2 col-sm-2" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left"> ' + value.descricao + '</div>';
 					item = item + '<div class="col-xs-10 col-md-10 col-sm-10 itens" style="border: 1px #ccc solid;background: ' + color + ';height: 22px; text-overflow: ellipsis;">';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=01&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_01" > 0</a></div>	<div class="col-sm-1 "><a href="#paginas/detalhes.php?mes=02&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_02"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=03&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_03"> 0</a></div>	<div class="col-sm-1 "><a href="#paginas/detalhes.php?mes=04&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_04"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=05&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_05"> 0</a></div>	<div class="col-sm-1 "><a href="#paginas/detalhes.php?mes=06&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_06"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=07&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_07"> 0</a></div>	<div class="col-sm-1 "><a href="#paginas/detalhes.php?mes=08&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_08"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=09&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_09">0</a></div>  	<div class="col-sm-1 "><a href="#paginas/detalhes.php?mes=10&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_10"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=11&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_11"> 0</a></div>	<div class="col-sm-1 "><a href="#paginas/detalhes.php?mes=12&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_12"> 0 </a></div>';
+					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=01&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_01" > 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=02&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_02"> 0 </a></div>';
+					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=03&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_03"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=04&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_04"> 0 </a></div>';
+					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=05&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_05"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=06&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_06"> 0 </a></div>';
+					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=07&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_07"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=08&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_08"> 0 </a></div>';
+					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=09&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_09">0</a></div>  	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=10&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_10"> 0 </a></div>';
+					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=11&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_11"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=12&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_12"> 0 </a></div>';
 					item = item + '</div>';
 
 					$('.meses').append(item);

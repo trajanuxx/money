@@ -1,4 +1,9 @@
 <?php
+session_start();
+require_once $_SERVER[DOCUMENT_ROOT].'money/config.php';
+if(($_SESSION['usuario']!=USER)&&($_SESSION['senha']!=PASSWORD)){
+	header("Location: login.php"); 
+}
 
 //initilize the page
 require_once("inc/init.php");

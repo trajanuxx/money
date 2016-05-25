@@ -1,10 +1,6 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8",true);
-//if($_SERVER["HTTP_X_REQUESTED_WITH"]<>'XMLHttpRequest'){
-//	header('Location: http://www.trajanux.com.br/');
-//	return;
-//}
-/**
+/*
 
  * mbe.ro
  *
@@ -16,10 +12,10 @@ class mysql {
 	var $con;
 	function __construct($db=array()) {
 		$default = array(
-		'host' => 'mysql.trajanux.com.br',
-			'user' => 'trajanux',
-			'pass' => 'o4v6t1',
-			'db' => 'trajanux'
+		  'host' => HOST_BANCO,
+			'user' => USER_BANCO,
+			'pass' => SENHA_BANCO,
+			'db' => BANCO
 		);
 		$db = array_merge($default,$db);
 		$this->con=mysql_connect($db['host'],$db['user'],$db['pass'],true) or die ('Error connecting to MySQL');

@@ -1,6 +1,8 @@
 <?php
-include '../data/mysql.php';
-include '../data/geral.php';
+require_once $_SERVER[DOCUMENT_ROOT].'money/config.php';
+require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/mysql.php';
+require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/geral.php';
+
 date_default_timezone_set("America/Sao_Paulo");
 $generico = new Geral();
 
