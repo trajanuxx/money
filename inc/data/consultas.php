@@ -20,7 +20,8 @@ if(!isset($parametro)){
 // FINANCEIRO ///////////////
 
 define("LISTAR_CATEGORIAS","  (SELECT * FROM tipo  order by tipo desc,descricao )");
-define("LISTAR_VALORES","SELECT * FROM tarefas where ano =trim('".$parametro[0]."') and tipo =trim('".$parametro[1] ."')");
+define("LISTAR_VALORES","SELECT ta.*, ti.descricao FROM tarefas ta left join tipo ti on ta.tipo = ti.id where ta.ano =trim('".$parametro[0]."') and ta.tipo =trim('".$parametro[1] ."')");
+define("LISTAR_VALORES_ANO","SELECT ta.*, ti.descricao FROM tarefas ta left join tipo ti on ta.tipo = ti.id where ta.ano =trim('".$parametro[0]."') ");
 define("LISTAR_VALORES_DETALHES","SELECT id,data, Item, tiporegistro ,valor FROM tarefas where ano =trim('".$parametro[0]."') and mes=trim('".$parametro[1] ."') and tipo =trim('".$parametro[2] ."')");
 define("LISTAR_REGRAS","SELECT tp.id,tp.descricao as regra, t.descricao as categoria, case when t.tipo =1 then 'Entrada' else 'Saida' end as tipo FROM tipo_palavras tp 
                         left join tipo t on t.id = tp.tipo

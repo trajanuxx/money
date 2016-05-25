@@ -1,0 +1,204 @@
+OFXHEADER:100DATA:OFXSGMLVERSION:102SECURITY:NONEENCODING:USASCIICHARSET:1252COMPRESSION:NONEOLDFILEUID:NONENEWFILEUID:NONE<OFX>
+   <SIGNONMSGSRSV1>
+      <SONRS>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <DTSERVER>20160525120000[-3:BRT]</DTSERVER>
+         <LANGUAGE>POR</LANGUAGE>
+         <FI>
+            <ORG>Banco do Brasil</ORG>
+            <FID>1</FID>
+         </FI>
+      </SONRS>
+   </SIGNONMSGSRSV1>
+   <BANKMSGSRSV1>
+      <STMTTRNRS>
+         <TRNUID>1</TRNUID>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <STMTRS>
+            <CURDEF>BRL</CURDEF>
+            <BANKACCTFROM>
+               <BANKID>1</BANKID>
+               <BRANCHID>1003-0</BRANCHID>
+               <ACCTID>31122-7</ACCTID>
+               <ACCTTYPE>CHECKING</ACCTTYPE>
+            </BANKACCTFROM>
+            <BANKTRANLIST>
+               <DTSTART>20160429120000[-3:BRT]</DTSTART>
+               <DTEND>20160525120000[-3:BRT]</DTEND>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160502120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>3679.79</TRNAMT>
+                  <FITID>2016050203679790</FITID>
+                  <CHECKNUM>000000264281</CHECKNUM>
+                  <REFNUM>264.281</REFNUM>
+                  <MEMO>Recebimento de Proventos - INSTITUTO FEDERAL DE EDUCACAO CIENC</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160504120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-23.40</TRNAMT>
+                  <FITID>20160504123400</FITID>
+                  <CHECKNUM>000000151181</CHECKNUM>
+                  <REFNUM>151.181</REFNUM>
+                  <MEMO>Compra com Cartão - 04/05 14:13 GIRAFFAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160509120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1971.27</TRNAMT>
+                  <FITID>2016050911971270</FITID>
+                  <CHECKNUM>000033887030</CHECKNUM>
+                  <REFNUM>33.887.030</REFNUM>
+                  <MEMO>Pagto cartão crédito</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160510120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-44.55</TRNAMT>
+                  <FITID>20160510144550</FITID>
+                  <CHECKNUM>311001409346</CHECKNUM>
+                  <REFNUM>891.311.001.409.346</REFNUM>
+                  <MEMO>Tarifa Pacote de Serviços - Tarifa referente a 10/05/2016</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160512120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.70</TRNAMT>
+                  <FITID>20160512130700</FITID>
+                  <CHECKNUM>000000147094</CHECKNUM>
+                  <REFNUM>147.094</REFNUM>
+                  <MEMO>Compra com Cartão - 12/05 13:04 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160513120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-36.00</TRNAMT>
+                  <FITID>20160513136000</FITID>
+                  <CHECKNUM>000000146524</CHECKNUM>
+                  <REFNUM>146.524</REFNUM>
+                  <MEMO>Compra com Cartão - 13/05 12:55 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160513120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-6.00</TRNAMT>
+                  <FITID>2016051316000</FITID>
+                  <CHECKNUM>000000272242</CHECKNUM>
+                  <REFNUM>272.242</REFNUM>
+                  <MEMO>Compra com Cartão - 13/05 20:04 FAST NATURE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160516120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-23.40</TRNAMT>
+                  <FITID>20160516123400</FITID>
+                  <CHECKNUM>000000146358</CHECKNUM>
+                  <REFNUM>146.358</REFNUM>
+                  <MEMO>Compra com Cartão - 16/05 12:52 GIRAFFAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160517120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-19.80</TRNAMT>
+                  <FITID>20160517119800</FITID>
+                  <CHECKNUM>000000161770</CHECKNUM>
+                  <REFNUM>161.770</REFNUM>
+                  <MEMO>Compra com Cartão - 17/05 17:09 CASA SAO PEDRO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160517120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-32.00</TRNAMT>
+                  <FITID>20160517132000</FITID>
+                  <CHECKNUM>000000263426</CHECKNUM>
+                  <REFNUM>263.426</REFNUM>
+                  <MEMO>Compra com Cartão - 17/05 17:37 ARMARINHO CENTRAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160519120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-73.81</TRNAMT>
+                  <FITID>20160519173810</FITID>
+                  <CHECKNUM>000000179595</CHECKNUM>
+                  <REFNUM>179.595</REFNUM>
+                  <MEMO>Compra com Cartão - 19/05 22:06 DROGASIL 481</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20160520130000</FITID>
+                  <CHECKNUM>000000135007</CHECKNUM>
+                  <REFNUM>135.007</REFNUM>
+                  <MEMO>Compra com Cartão - 20/05 09:43 CASCOL COMBUSTIVE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-99.66</TRNAMT>
+                  <FITID>20160520199660</FITID>
+                  <CHECKNUM>000000245863</CHECKNUM>
+                  <REFNUM>245.863</REFNUM>
+                  <MEMO>Compra com Cartão - 20/05 12:44 FRAN S CAFE ASA N</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160520120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-500.00</TRNAMT>
+                  <FITID>201605201500000</FITID>
+                  <CHECKNUM>475000032346</CHECKNUM>
+                  <REFNUM>603.475.000.032.346</REFNUM>
+                  <MEMO>Transferência on line - 20/05 3475      32346-2 ELIEZER TRAJAN</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160523120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-17.00</TRNAMT>
+                  <FITID>20160523117000</FITID>
+                  <CHECKNUM>000000176010</CHECKNUM>
+                  <REFNUM>176.010</REFNUM>
+                  <MEMO>Compra com Cartão - 22/05 21:06 IGREJA BATISTA DO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160523120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-19.50</TRNAMT>
+                  <FITID>20160523119500</FITID>
+                  <CHECKNUM>000000250219</CHECKNUM>
+                  <REFNUM>250.219</REFNUM>
+                  <MEMO>Compra com Cartão - 23/05 13:56 CHINA BRASIL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160523120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-46.60</TRNAMT>
+                  <FITID>20160523146600</FITID>
+                  <CHECKNUM>000000377376</CHECKNUM>
+                  <REFNUM>377.376</REFNUM>
+                  <MEMO>Compra com Cartão - 23/05 21:29 FAST NATURE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160523120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1300.00</TRNAMT>
+                  <FITID>2016052311300000</FITID>
+                  <CHECKNUM>000000052301</CHECKNUM>
+                  <REFNUM>52.301</REFNUM>
+                  <MEMO>Emissão de DOC D - 104 2814 00817816100 KATTIUCY SOUSA CO</MEMO>
+               </STMTTRN>
+            </BANKTRANLIST>
+            <LEDGERBAL>
+               <BALAMT>199.40</BALAMT>
+               <DTASOF>20160525120000[-3:BRT]</DTASOF>
+            </LEDGERBAL>
+         </STMTRS>
+      </STMTTRNRS>
+   </BANKMSGSRSV1>
+</OFX>

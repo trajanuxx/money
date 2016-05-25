@@ -23,6 +23,11 @@ ex:
 */
 $page_nav = array(
 	"dashboard" => array(
+		"title" => "Dashboard",
+		"url" => "paginas/inicio_grafico.php",
+		"icon" => "fa-home"
+	)	,
+		"dashboard_inicio" => array(
 		"title" => "Pagina Inicial",
 		"url" => "paginas/inicio.php",
 		"icon" => "fa-home"

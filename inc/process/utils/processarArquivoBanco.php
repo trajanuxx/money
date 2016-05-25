@@ -120,15 +120,23 @@ function getContaCartao($value){
 }
 
 function getMes($value){
-	$a = split("<TRNTYPE>",$value);
-	$a=$a[1];
-	$a=split("<DTPOSTED>",$a);
-	$a=$a[1];
-	$a=split("<TRNAMT>",$a);
-	$a=$a[0];
-	$data = trim($a);
-	$mes = substr($data, 4, 2);
-
+	
+	if(getCartao()=="Cartão de Crédito"){
+			$a = remover($value);
+			$a = split("<DTASOF>",$a);
+			$a =$a[1];
+			$a = split("</DTASOF>",$a);
+		  $a =  $a[0];
+	}else{
+		  	$a = split("<TRNTYPE>",$value);
+				$a=$a[1];
+				$a=split("<DTPOSTED>",$a);
+				$a=$a[1];
+				$a=split("<TRNAMT>",$a);
+				$a=$a[0];
+	}
+	
+  $mes = substr(trim($a), 4, 2);	
 	return $mes;
 }
 

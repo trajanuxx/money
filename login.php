@@ -85,7 +85,7 @@
 
 	
 		<meta charset="utf-8">
-		<title>Trajanux-Finanças</title>
+		<title>Trajanux-Finanças <bR>(Meu Porquinho)</title>
 
 		<meta name="description" content="User login page">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">

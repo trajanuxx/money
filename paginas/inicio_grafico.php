@@ -73,62 +73,59 @@
 		var categorias_dados = [];
 		var i = 0;
 
-		carregarValores({
-			consulta: "LISTAR_CATEGORIAS"
-		}, function(obj) {
-
-			if (obj) {
-				$.each(obj, function(index, value) {
-					categorias_dados[i] = [];
-					categorias[i] = value.descricao;
-					categorias_dados[i][0] = value.id
-					carregarValores({
-						consulta: "LISTAR_VALORES",
-						parametro: $('#ano').val() + ',' + value.id
-					}, function(obj) {
+				carregarValores({
+						consulta: "LISTAR_VALORES_ANO",
+						parametro: $('#ano').val() 
+					}, function(obj) {	
 						$.each(obj, function(index, valor) {
-							if(categorias_dados[i][0]==valor.tipo){
-								if(!categorias_dados[i][valor.mes]){
-									categorias_dados[i][parseInt(valor.mes)]=0;
-								}
-								console.log(parseInt(valor.mes));
-								categorias_dados[i][parseInt(valor.mes)] = categorias_dados[i][parseInt(valor.mes)]+parseFloat(valor.valor);
+							
+							if(!categorias_dados){
+								var item={
+									name:valor.descricao,
+									data:[]
+						   	}
+							  item.data[valor.mes]=perseFloat(valor.valor);								
+								categorias_dados.push(item);
+								
+							}else{
+								$.each(categorias_dados,function(index1,valor1){
+									if(valor1.name==valor.descricao){
+										valor1.data[valor.mes] =parseFloat(valor1.data[valor.mes])+ valor.valor;								
+									}								
+							});
 							}
+							
+							console.log(categorias_dados);
+							
+								/*	
+							if(!categorias_dados[parseInt(valor.tipo)]){
+								categorias_dados.push({
+									name:valor.descricao,
+									data:[]
+								});
+							}
+					
+							if(!categorias_dados[parseInt(valor.tipo)]["name"]){
+								categorias_dados[parseInt(valor.tipo)]["name"] = valor.descricao;
+								categorias_dados[parseInt(valor.tipo)]["data"] =[];
+							}
+													
+							if(!categorias_dados[parseInt(valor.tipo)]["data"][parseInt(valor.mes)]){
+								categorias_dados[parseInt(valor.tipo)]["data"][parseInt(valor.mes)] = parseFloat(valor.valor);
+
+							}else{
+								categorias_dados[parseInt(valor.tipo)]["data"][parseInt(valor.mes)]  =  categorias_dados[parseInt(valor.tipo)]["data"][parseInt(valor.mes)]  + parseFloat(valor.valor);															
+							}
+						*/
+							console.log(categorias_dados);
+					    //gerarLinhas('grafico', meses, 'Informação Geral de Gastos', categorias_dados);	
+		       
 						});
-					});
-						i++;
-				});
-			
-			}
-			console.log(categorias);
-			console.log(categorias_dados);
-
-		});
-
-
-			
-			
-			
- var series = [{
-            name: categorias[1],
-            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-        }, {
-            name: categorias[2],
-            data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-        }, {
-            name: categorias[2],
-            data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
-        }, {
-            name: categorias[2],
-            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-        }];			
-
-gerarLinhas('grafico', meses, 'Informação Geral de Gastos', series);
-			
-			
+					},true);
 	
 
 	}
+
 
 
 
