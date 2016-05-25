@@ -1,17 +1,17 @@
 <?php
 // usuário do banco
-define("USER_BANCO","");
+define("USER_BANCO","trajanux");
 // senha do banco
-define("SENHA_BANCO","");
+define("SENHA_BANCO","o4v6t1");
 // Nome do Banco
-define("BANCO","");
+define("BANCO","trajanux");
 // host do banco
-define("HOST_BANCO","");
+define("HOST_BANCO","mysql.trajanux.com.br");
 
 // usuário do sistema
 define("USER","trajanux");
 // senha de acesso ao sistema
-define("PASSWORD","trajanux");
+define("PASSWORD","18maioneast");
 
 
 ?>
