@@ -95,7 +95,7 @@
 					}
 
 					var item = '';
-					item = item + '<div class="col-xs-2 col-md-2 col-sm-2" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left"><span> ' + value.descricao + '</span><span id="media_' + value.id + '" style="float:right">0</span></div>';
+					item = item + '<div class="col-xs-2 col-md-2 col-sm-2" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left"><span> <a href="#" data-toggle="tooltip" data-placement="top" title="0" id="media_' + value.id + '">' + value.descricao + '</a></span></div>';
 					item = item + '<div class="col-xs-10 col-md-10 col-sm-10 itens" style="border: 1px #ccc solid;background: ' + color + ';height: 22px; text-overflow: ellipsis;">';
 					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=01&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_01 item_' + value.id + '" > 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=02&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_02 item_' + value.id + '"> 0 </a></div>';
 					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=03&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_03 item_' + value.id + '"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=04&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_04 item_' + value.id + '"> 0 </a></div>';
@@ -138,7 +138,8 @@
 				}
 		});
 		
-		$("#media_"+ value).html(parseFloat(Total)/parseFloat(Qtd).toFixed(2) );
+		if ((Total)<0) Total=Total*(-1);		
+		$("#media_"+ value).attr("title", "Média R$"+((parseFloat(Total)/parseFloat(Qtd)).toFixed(2) ));
 
 		
 		
