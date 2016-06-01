@@ -1,0 +1,1005 @@
+OFXHEADER:100DATA:OFXSGMLVERSION:102SECURITY:NONEENCODING:USASCIICHARSET:1252COMPRESSION:NONEOLDFILEUID:NONENEWFILEUID:NONE<OFX>
+   <SIGNONMSGSRSV1>
+      <SONRS>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <DTSERVER>20160526120000[-3:BRT]</DTSERVER>
+         <LANGUAGE>POR</LANGUAGE>
+         <FI>
+            <ORG>Banco do Brasil</ORG>
+            <FID>1</FID>
+         </FI>
+      </SONRS>
+   </SIGNONMSGSRSV1>
+   <BANKMSGSRSV1>
+      <STMTTRNRS>
+         <TRNUID>1</TRNUID>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <STMTRS>
+            <CURDEF>BRL</CURDEF>
+            <BANKACCTFROM>
+               <BANKID>1</BANKID>
+               <BRANCHID>3475-4</BRANCHID>
+               <ACCTID>32346-2</ACCTID>
+               <ACCTTYPE>CHECKING</ACCTTYPE>
+            </BANKACCTFROM>
+            <BANKTRANLIST>
+               <DTSTART>20151130120000[-3:BRT]</DTSTART>
+               <DTEND>20151231120000[-3:BRT]</DTEND>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151201120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-22.00</TRNAMT>
+                  <FITID>20151201122000</FITID>
+                  <CHECKNUM>000000635221</CHECKNUM>
+                  <REFNUM>635.221</REFNUM>
+                  <MEMO>Compra com Cartão - 01/12 09:46 GIRAFFAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151201120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-15.62</TRNAMT>
+                  <FITID>20151201115620</FITID>
+                  <CHECKNUM>000000784055</CHECKNUM>
+                  <REFNUM>784.055</REFNUM>
+                  <MEMO>Compra com Cartão - 01/12 12:44 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151202120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-4.16</TRNAMT>
+                  <FITID>2015120214160</FITID>
+                  <CHECKNUM>000000122066</CHECKNUM>
+                  <REFNUM>122.066</REFNUM>
+                  <MEMO>Compra com Cartão - 02/12 20:16 BOULEVARD BRASILIA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151202120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-121.60</TRNAMT>
+                  <FITID>201512021121600</FITID>
+                  <CHECKNUM>000000173979</CHECKNUM>
+                  <REFNUM>173.979</REFNUM>
+                  <MEMO>Compra com Cartão - 02/12 21:52 WAL MART ASA NORTE12</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151202120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-43.51</TRNAMT>
+                  <FITID>20151202143510</FITID>
+                  <CHECKNUM>000000181755</CHECKNUM>
+                  <REFNUM>181.755</REFNUM>
+                  <MEMO>Compra com Cartão - 02/12 22:11 DROGARIA  FLAMINGO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151203120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-15.56</TRNAMT>
+                  <FITID>20151203115560</FITID>
+                  <CHECKNUM>000000358699</CHECKNUM>
+                  <REFNUM>358.699</REFNUM>
+                  <MEMO>Compra com Cartão - 03/12 11:39 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151203120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-33.50</TRNAMT>
+                  <FITID>20151203133500</FITID>
+                  <CHECKNUM>000000793415</CHECKNUM>
+                  <REFNUM>793.415</REFNUM>
+                  <MEMO>Compra com Cartão - 03/12 19:10 LAURINDO PEREIRA RAM</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151203120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.80</TRNAMT>
+                  <FITID>20151203114800</FITID>
+                  <CHECKNUM>000000807271</CHECKNUM>
+                  <REFNUM>807.271</REFNUM>
+                  <MEMO>Compra com Cartão - 03/12 19:27 SETESABORES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.34</TRNAMT>
+                  <FITID>20151204114340</FITID>
+                  <CHECKNUM>000000050967</CHECKNUM>
+                  <REFNUM>50.967</REFNUM>
+                  <MEMO>Compra com Cartão - 04/12 07:28 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-22.50</TRNAMT>
+                  <FITID>20151204122500</FITID>
+                  <CHECKNUM>000000051671</CHECKNUM>
+                  <REFNUM>51.671</REFNUM>
+                  <MEMO>Compra com Cartão - 04/12 07:31 SOS FARMACOS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-23.72</TRNAMT>
+                  <FITID>20151204123720</FITID>
+                  <CHECKNUM>000000282062</CHECKNUM>
+                  <REFNUM>282.062</REFNUM>
+                  <MEMO>Compra com Cartão - 04/12 12:46 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-34.87</TRNAMT>
+                  <FITID>20151204134870</FITID>
+                  <CHECKNUM>000000652447</CHECKNUM>
+                  <REFNUM>652.447</REFNUM>
+                  <MEMO>Compra com Cartão - 04/12 18:26 FREDDO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-63.90</TRNAMT>
+                  <FITID>20151204163900</FITID>
+                  <CHECKNUM>000000728436</CHECKNUM>
+                  <REFNUM>728.436</REFNUM>
+                  <MEMO>Compra com Cartão - 04/12 19:50 TOK  STOK</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-19.80</TRNAMT>
+                  <FITID>20151204119800</FITID>
+                  <CHECKNUM>000000744462</CHECKNUM>
+                  <REFNUM>744.462</REFNUM>
+                  <MEMO>Compra com Cartão - 04/12 20:10 GEN SHOP IGUATEMI DF</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-9.50</TRNAMT>
+                  <FITID>2015120419500</FITID>
+                  <CHECKNUM>000000746270</CHECKNUM>
+                  <REFNUM>746.270</REFNUM>
+                  <MEMO>Compra com Cartão - 04/12 20:13 MARIETTA E MARVIN</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-15.10</TRNAMT>
+                  <FITID>20151204115100</FITID>
+                  <CHECKNUM>000000757874</CHECKNUM>
+                  <REFNUM>757.874</REFNUM>
+                  <MEMO>Compra com Cartão - 04/12 20:29 MARIETTA E MARVIN</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2.27</TRNAMT>
+                  <FITID>2015120712270</FITID>
+                  <CHECKNUM>000000021429</CHECKNUM>
+                  <REFNUM>21.429</REFNUM>
+                  <MEMO>Compra com Cartão - 05/12 08:49 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-25.00</TRNAMT>
+                  <FITID>20151207125000</FITID>
+                  <CHECKNUM>000000129658</CHECKNUM>
+                  <REFNUM>129.658</REFNUM>
+                  <MEMO>Compra com Cartão - 05/12 10:45 SALAO DA EVA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-7.78</TRNAMT>
+                  <FITID>2015120717780</FITID>
+                  <CHECKNUM>000000167064</CHECKNUM>
+                  <REFNUM>167.064</REFNUM>
+                  <MEMO>Compra com Cartão - 05/12 18:37 BSB COOK</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-20.00</TRNAMT>
+                  <FITID>20151207120000</FITID>
+                  <CHECKNUM>000000217269</CHECKNUM>
+                  <REFNUM>217.269</REFNUM>
+                  <MEMO>Compra com Cartão - 06/12 12:52 NAKED BARBECUE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-21.94</TRNAMT>
+                  <FITID>20151207121940</FITID>
+                  <CHECKNUM>000000224032</CHECKNUM>
+                  <REFNUM>224.032</REFNUM>
+                  <MEMO>Compra com Cartão - 06/12 12:59 CHURRASQUIM  MORANGU</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-45.90</TRNAMT>
+                  <FITID>20151207145900</FITID>
+                  <CHECKNUM>000000423927</CHECKNUM>
+                  <REFNUM>423.927</REFNUM>
+                  <MEMO>Compra com Cartão - 05/12 14:09 REST CHAO GOIANO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-4.25</TRNAMT>
+                  <FITID>2015120714250</FITID>
+                  <CHECKNUM>000000579861</CHECKNUM>
+                  <REFNUM>579.861</REFNUM>
+                  <MEMO>Compra com Cartão - 07/12 08:21 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-820.00</TRNAMT>
+                  <FITID>201512071820000</FITID>
+                  <CHECKNUM>000000589700</CHECKNUM>
+                  <REFNUM>589.700</REFNUM>
+                  <MEMO>Compra com Cartão - 07/12 08:49 BIRIGO  AUTO PECAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-90.08</TRNAMT>
+                  <FITID>20151207190080</FITID>
+                  <CHECKNUM>000000670518</CHECKNUM>
+                  <REFNUM>670.518</REFNUM>
+                  <MEMO>Compra com Cartão - 05/12 18:07 BRE ETNA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.40</TRNAMT>
+                  <FITID>20151207114400</FITID>
+                  <CHECKNUM>000000696638</CHECKNUM>
+                  <REFNUM>696.638</REFNUM>
+                  <MEMO>Compra com Cartão - 05/12 18:35 CAFE INSTANTE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.12</TRNAMT>
+                  <FITID>20151207114120</FITID>
+                  <CHECKNUM>000000776220</CHECKNUM>
+                  <REFNUM>776.220</REFNUM>
+                  <MEMO>Compra com Cartão - 07/12 12:43 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-543.10</TRNAMT>
+                  <FITID>201512071543100</FITID>
+                  <CHECKNUM>000000808478</CHECKNUM>
+                  <REFNUM>808.478</REFNUM>
+                  <MEMO>Compra com Cartão - 05/12 20:54 TOK  STOK</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-20.00</TRNAMT>
+                  <FITID>20151207120001</FITID>
+                  <CHECKNUM>959420000000</CHECKNUM>
+                  <REFNUM>71.959.420.000.000</REFNUM>
+                  <MEMO>Saque Móvel - 07/12 19:59 METRO EST.CENTRAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2000.00</TRNAMT>
+                  <FITID>2015120712000000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 05/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151207120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.40</TRNAMT>
+                  <FITID>20151207110400</FITID>
+                  <CHECKNUM>411002609916</CHECKNUM>
+                  <REFNUM>893.411.002.609.916</REFNUM>
+                  <MEMO>Tarifa Pacote de Serviços - Tarifa referente a 07/12/2015</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151208120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>200.00</TRNAMT>
+                  <FITID>201512080200000</FITID>
+                  <CHECKNUM>002879545339</CHECKNUM>
+                  <REFNUM>2.879.545.339</REFNUM>
+                  <MEMO>Depósito Online</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151208120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>508.47</TRNAMT>
+                  <FITID>201512080508470</FITID>
+                  <CHECKNUM>000001200052</CHECKNUM>
+                  <REFNUM>1.200.052</REFNUM>
+                  <MEMO>BB Referenciado DI 500</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151208120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-12.92</TRNAMT>
+                  <FITID>20151208112920</FITID>
+                  <CHECKNUM>000000638779</CHECKNUM>
+                  <REFNUM>638.779</REFNUM>
+                  <MEMO>Compra com Cartão - 08/12 12:42 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151208120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2000.00</TRNAMT>
+                  <FITID>2015120812000000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 08/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151209120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1900.00</TRNAMT>
+                  <FITID>2015120911900000</FITID>
+                  <CHECKNUM>000000296188</CHECKNUM>
+                  <REFNUM>296.188</REFNUM>
+                  <MEMO>Compra com Cartão - 09/12 08:35 PNEULINE SOBRADINHO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151209120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-11.84</TRNAMT>
+                  <FITID>20151209111840</FITID>
+                  <CHECKNUM>000000300948</CHECKNUM>
+                  <REFNUM>300.948</REFNUM>
+                  <MEMO>Compra com Cartão - 09/12 08:46 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151209120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-36.59</TRNAMT>
+                  <FITID>20151209136590</FITID>
+                  <CHECKNUM>000000304130</CHECKNUM>
+                  <REFNUM>304.130</REFNUM>
+                  <MEMO>Compra com Cartão - 09/12 08:53 VERDURAO DA FARTURA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151209120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.94</TRNAMT>
+                  <FITID>20151209110940</FITID>
+                  <CHECKNUM>000000503367</CHECKNUM>
+                  <REFNUM>503.367</REFNUM>
+                  <MEMO>Compra com Cartão - 09/12 12:43 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>500.00</TRNAMT>
+                  <FITID>201512100500000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 10/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-32.30</TRNAMT>
+                  <FITID>20151210132300</FITID>
+                  <CHECKNUM>000000853989</CHECKNUM>
+                  <REFNUM>853.989</REFNUM>
+                  <MEMO>Compra com Cartão - 10/12 20:10 FAST NATURE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1079.49</TRNAMT>
+                  <FITID>2015121011079490</FITID>
+                  <CHECKNUM>000092275172</CHECKNUM>
+                  <REFNUM>92.275.172</REFNUM>
+                  <MEMO>Pagto cartão crédito</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151211120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>60.00</TRNAMT>
+                  <FITID>20151211060000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 11/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151211120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-23.90</TRNAMT>
+                  <FITID>20151211123900</FITID>
+                  <CHECKNUM>000000441402</CHECKNUM>
+                  <REFNUM>441.402</REFNUM>
+                  <MEMO>Compra com Cartão - 11/12 14:20 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151211120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.00</TRNAMT>
+                  <FITID>2015121115000</FITID>
+                  <CHECKNUM>000000495785</CHECKNUM>
+                  <REFNUM>495.785</REFNUM>
+                  <MEMO>Compra com Cartão - 11/12 15:11 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151211120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-28.50</TRNAMT>
+                  <FITID>20151211128500</FITID>
+                  <CHECKNUM>000000711641</CHECKNUM>
+                  <REFNUM>711.641</REFNUM>
+                  <MEMO>Compra com Cartão - 11/12 18:25 MR REYNOLDS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151211120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-320.00</TRNAMT>
+                  <FITID>201512111320000</FITID>
+                  <CHECKNUM>401372631598</CHECKNUM>
+                  <REFNUM>111.401.372.631.598</REFNUM>
+                  <MEMO>Saque no TAA - 11/12 14:01 SOP-SERPRO-MODULO G</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151211120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-50.00</TRNAMT>
+                  <FITID>20151211150000</FITID>
+                  <CHECKNUM>527422631598</CHECKNUM>
+                  <REFNUM>111.527.422.631.598</REFNUM>
+                  <MEMO>Saque no TAA - 11/12 15:27 SOP-SERPRO-MODULO G</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>50.00</TRNAMT>
+                  <FITID>20151214050000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 12/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>450.00</TRNAMT>
+                  <FITID>201512140450000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 12/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-104.86</TRNAMT>
+                  <FITID>201512141104860</FITID>
+                  <CHECKNUM>000000350059</CHECKNUM>
+                  <REFNUM>350.059</REFNUM>
+                  <MEMO>Compra com Cartão - 14/12 20:22 WAL MART ASA NORTE12</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-53.42</TRNAMT>
+                  <FITID>20151214153420</FITID>
+                  <CHECKNUM>000000388019</CHECKNUM>
+                  <REFNUM>388.019</REFNUM>
+                  <MEMO>Compra com Cartão - 12/12 12:57 YAN PING</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-34.00</TRNAMT>
+                  <FITID>20151214134000</FITID>
+                  <CHECKNUM>000000417493</CHECKNUM>
+                  <REFNUM>417.493</REFNUM>
+                  <MEMO>Compra com Cartão - 12/12 13:18 CINE PATIO SHOP</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-25.00</TRNAMT>
+                  <FITID>20151214125000</FITID>
+                  <CHECKNUM>000000553914</CHECKNUM>
+                  <REFNUM>553.914</REFNUM>
+                  <MEMO>Compra com Cartão - 13/12 21:20 IGREJA BATISTA DO LA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-11.00</TRNAMT>
+                  <FITID>20151214111000</FITID>
+                  <CHECKNUM>000000559438</CHECKNUM>
+                  <REFNUM>559.438</REFNUM>
+                  <MEMO>Compra com Cartão - 13/12 21:32 IGREJA BATISTA DO LA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>17.30</TRNAMT>
+                  <FITID>20151214017300</FITID>
+                  <CHECKNUM>000000686684</CHECKNUM>
+                  <REFNUM>686.684</REFNUM>
+                  <MEMO>Estorno de Débito</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-17.30</TRNAMT>
+                  <FITID>20151214117300</FITID>
+                  <CHECKNUM>000000686684</CHECKNUM>
+                  <REFNUM>686.684</REFNUM>
+                  <MEMO>Compra com Cartão - 12/12 17:33 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-17.30</TRNAMT>
+                  <FITID>20151214117301</FITID>
+                  <CHECKNUM>000000687092</CHECKNUM>
+                  <REFNUM>687.092</REFNUM>
+                  <MEMO>Compra com Cartão - 12/12 17:34 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-15.38</TRNAMT>
+                  <FITID>20151214115380</FITID>
+                  <CHECKNUM>000000691607</CHECKNUM>
+                  <REFNUM>691.607</REFNUM>
+                  <MEMO>Compra com Cartão - 12/12 17:39 VERDURAO DA FARTURA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-4.99</TRNAMT>
+                  <FITID>2015121414990</FITID>
+                  <CHECKNUM>000000694420</CHECKNUM>
+                  <REFNUM>694.420</REFNUM>
+                  <MEMO>Compra com Cartão - 12/12 17:42 DROGARIA ROSARIO FL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-12.59</TRNAMT>
+                  <FITID>20151214112590</FITID>
+                  <CHECKNUM>000000698586</CHECKNUM>
+                  <REFNUM>698.586</REFNUM>
+                  <MEMO>Compra com Cartão - 12/12 17:47 SUPERMECADO DONA DE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151214120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-18.00</TRNAMT>
+                  <FITID>20151214118000</FITID>
+                  <CHECKNUM>000000813667</CHECKNUM>
+                  <REFNUM>813.667</REFNUM>
+                  <MEMO>Compra com Cartão - 14/12 12:43 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-40.70</TRNAMT>
+                  <FITID>20151215140700</FITID>
+                  <CHECKNUM>000000232857</CHECKNUM>
+                  <REFNUM>232.857</REFNUM>
+                  <MEMO>Compra com Cartão - 15/12 20:17 CHURRASQUIM  MORANGU</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-18.80</TRNAMT>
+                  <FITID>20151215118800</FITID>
+                  <CHECKNUM>000000693095</CHECKNUM>
+                  <REFNUM>693.095</REFNUM>
+                  <MEMO>Compra com Cartão - 15/12 12:59 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151216120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-6.00</TRNAMT>
+                  <FITID>2015121616000</FITID>
+                  <CHECKNUM>000000018572</CHECKNUM>
+                  <REFNUM>18.572</REFNUM>
+                  <MEMO>Compra com Cartão - 16/12 17:51 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151216120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-45.87</TRNAMT>
+                  <FITID>20151216145870</FITID>
+                  <CHECKNUM>000000198656</CHECKNUM>
+                  <REFNUM>198.656</REFNUM>
+                  <MEMO>Compra com Cartão - 16/12 21:12 BENTO FERREIRA REST</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151216120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.80</TRNAMT>
+                  <FITID>20151216114800</FITID>
+                  <CHECKNUM>000000587642</CHECKNUM>
+                  <REFNUM>587.642</REFNUM>
+                  <MEMO>Compra com Cartão - 16/12 12:50 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-32.30</TRNAMT>
+                  <FITID>20151217132300</FITID>
+                  <CHECKNUM>000000100725</CHECKNUM>
+                  <REFNUM>100.725</REFNUM>
+                  <MEMO>Compra com Cartão - 17/12 20:00 FAST NATURE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-25.90</TRNAMT>
+                  <FITID>20151217125900</FITID>
+                  <CHECKNUM>000000544842</CHECKNUM>
+                  <REFNUM>544.842</REFNUM>
+                  <MEMO>Compra com Cartão - 17/12 12:59 VOYAGE GOURMET CREPE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-20.70</TRNAMT>
+                  <FITID>20151217120700</FITID>
+                  <CHECKNUM>000000548794</CHECKNUM>
+                  <REFNUM>548.794</REFNUM>
+                  <MEMO>Compra com Cartão - 17/12 13:02 WOK BRASILIA CULINAR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-8.00</TRNAMT>
+                  <FITID>2015121718000</FITID>
+                  <CHECKNUM>000000588806</CHECKNUM>
+                  <REFNUM>588.806</REFNUM>
+                  <MEMO>Compra com Cartão - 17/12 13:34 MC DONALDS BSI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1.02</TRNAMT>
+                  <FITID>2015121711020</FITID>
+                  <CHECKNUM>000000596892</CHECKNUM>
+                  <REFNUM>596.892</REFNUM>
+                  <MEMO>Compra com Cartão - 17/12 13:40 BOULEVARD BRASILIA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>400.00</TRNAMT>
+                  <FITID>201512180400000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 18/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-99.90</TRNAMT>
+                  <FITID>20151218199900</FITID>
+                  <CHECKNUM>000000149366</CHECKNUM>
+                  <REFNUM>149.366</REFNUM>
+                  <MEMO>Compra com Cartão - 18/12 13:42 COTTA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-168.10</TRNAMT>
+                  <FITID>201512181168100</FITID>
+                  <CHECKNUM>000000194358</CHECKNUM>
+                  <REFNUM>194.358</REFNUM>
+                  <MEMO>Compra com Cartão - 18/12 20:14 CHURRASCARIA POTENCI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2.50</TRNAMT>
+                  <FITID>2015121812500</FITID>
+                  <CHECKNUM>000000249801</CHECKNUM>
+                  <REFNUM>249.801</REFNUM>
+                  <MEMO>Compra com Cartão - 18/12 13:50 MC DONALDS BSI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1.82</TRNAMT>
+                  <FITID>2015121811820</FITID>
+                  <CHECKNUM>000000350151</CHECKNUM>
+                  <REFNUM>350.151</REFNUM>
+                  <MEMO>Compra com Cartão - 18/12 13:55 BOULEVARD BRASILI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-13.90</TRNAMT>
+                  <FITID>20151218113900</FITID>
+                  <CHECKNUM>000000540924</CHECKNUM>
+                  <REFNUM>540.924</REFNUM>
+                  <MEMO>Compra com Cartão - 18/12 12:46 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>200.00</TRNAMT>
+                  <FITID>201512210200000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 20/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-32.50</TRNAMT>
+                  <FITID>20151221132500</FITID>
+                  <CHECKNUM>000000202672</CHECKNUM>
+                  <REFNUM>202.672</REFNUM>
+                  <MEMO>Compra com Cartão - 20/12 22:29 GABU LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-0.90</TRNAMT>
+                  <FITID>201512211900</FITID>
+                  <CHECKNUM>000000210332</CHECKNUM>
+                  <REFNUM>210.332</REFNUM>
+                  <MEMO>Compra com Cartão - 20/12 22:52 GABU LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2.50</TRNAMT>
+                  <FITID>2015122112500</FITID>
+                  <CHECKNUM>000000246859</CHECKNUM>
+                  <REFNUM>246.859</REFNUM>
+                  <MEMO>Compra com Cartão - 21/12 07:57 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20151221130000</FITID>
+                  <CHECKNUM>000000486187</CHECKNUM>
+                  <REFNUM>486.187</REFNUM>
+                  <MEMO>Compra com Cartão - 21/12 12:33 POSTO COMERCIAL UNB</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>13.49</TRNAMT>
+                  <FITID>20151221013490</FITID>
+                  <CHECKNUM>000000533332</CHECKNUM>
+                  <REFNUM>533.332</REFNUM>
+                  <MEMO>Estorno de Débito</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-13.49</TRNAMT>
+                  <FITID>20151221113490</FITID>
+                  <CHECKNUM>000000533332</CHECKNUM>
+                  <REFNUM>533.332</REFNUM>
+                  <MEMO>Compra com Cartão - 20/12 09:48 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-13.49</TRNAMT>
+                  <FITID>20151221113491</FITID>
+                  <CHECKNUM>000000533983</CHECKNUM>
+                  <REFNUM>533.983</REFNUM>
+                  <MEMO>Compra com Cartão - 20/12 09:49 PAO DE SAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-32.44</TRNAMT>
+                  <FITID>20151221132440</FITID>
+                  <CHECKNUM>000000536231</CHECKNUM>
+                  <REFNUM>536.231</REFNUM>
+                  <MEMO>Compra com Cartão - 21/12 13:08 BAR E RESTAURANTE SA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-3.50</TRNAMT>
+                  <FITID>2015122113500</FITID>
+                  <CHECKNUM>000000539427</CHECKNUM>
+                  <REFNUM>539.427</REFNUM>
+                  <MEMO>Compra com Cartão - 21/12 13:11 DOCURA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-34.97</TRNAMT>
+                  <FITID>20151221134970</FITID>
+                  <CHECKNUM>000000542477</CHECKNUM>
+                  <REFNUM>542.477</REFNUM>
+                  <MEMO>Compra com Cartão - 20/12 10:03 FARTURAO HORTIFRUTI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.80</TRNAMT>
+                  <FITID>20151221114800</FITID>
+                  <CHECKNUM>000000554023</CHECKNUM>
+                  <REFNUM>554.023</REFNUM>
+                  <MEMO>Compra com Cartão - 21/12 13:21 IMAGINE PRESENTES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-67.67</TRNAMT>
+                  <FITID>20151221167670</FITID>
+                  <CHECKNUM>000000556983</CHECKNUM>
+                  <REFNUM>556.983</REFNUM>
+                  <MEMO>Compra com Cartão - 19/12 11:11 SUPERMECADO DONA DE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151221120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-46.55</TRNAMT>
+                  <FITID>20151221146550</FITID>
+                  <CHECKNUM>000000570998</CHECKNUM>
+                  <REFNUM>570.998</REFNUM>
+                  <MEMO>Compra com Cartão - 19/12 11:19 DROGARIA ROSARIO FL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>200.00</TRNAMT>
+                  <FITID>201512220200000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 22/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20151222130000</FITID>
+                  <CHECKNUM>000000428456</CHECKNUM>
+                  <REFNUM>428.456</REFNUM>
+                  <MEMO>Compra com Cartão - 22/12 22:38 CASCOL COMBUSTIVEIS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151223120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>200.00</TRNAMT>
+                  <FITID>201512230200000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 23/12 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151223120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-9.90</TRNAMT>
+                  <FITID>2015122319900</FITID>
+                  <CHECKNUM>000000559317</CHECKNUM>
+                  <REFNUM>559.317</REFNUM>
+                  <MEMO>Compra com Cartão - 23/12 09:47 CONVENIENCIA BRASILI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151223120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-40.00</TRNAMT>
+                  <FITID>20151223140000</FITID>
+                  <CHECKNUM>000000596304</CHECKNUM>
+                  <REFNUM>596.304</REFNUM>
+                  <MEMO>Compra com Cartão - 23/12 20:29 POSTO COMERCIAL UNB</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151223120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.25</TRNAMT>
+                  <FITID>20151223130250</FITID>
+                  <CHECKNUM>000000708536</CHECKNUM>
+                  <REFNUM>708.536</REFNUM>
+                  <MEMO>Compra com Cartão - 23/12 22:53 PIZZARIA DOM FELIPE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151224120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-40.00</TRNAMT>
+                  <FITID>20151224140000</FITID>
+                  <CHECKNUM>000000406961</CHECKNUM>
+                  <REFNUM>406.961</REFNUM>
+                  <MEMO>Compra com Cartão - 24/12 14:15 LAVA JATO VITORIA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151228120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-43.50</TRNAMT>
+                  <FITID>20151228143500</FITID>
+                  <CHECKNUM>000000044644</CHECKNUM>
+                  <REFNUM>44.644</REFNUM>
+                  <MEMO>Compra com Cartão - 25/12 22:42 EMPORIO DA PIZZA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151228120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-29.50</TRNAMT>
+                  <FITID>20151228129500</FITID>
+                  <CHECKNUM>000000675250</CHECKNUM>
+                  <REFNUM>675.250</REFNUM>
+                  <MEMO>Compra com Cartão - 26/12 20:34 FAST NATURE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151228120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-21.30</TRNAMT>
+                  <FITID>20151228121300</FITID>
+                  <CHECKNUM>000000687980</CHECKNUM>
+                  <REFNUM>687.980</REFNUM>
+                  <MEMO>Compra com Cartão - 26/12 20:54 ACARAJE DA GIZA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151228120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-40.00</TRNAMT>
+                  <FITID>20151228140000</FITID>
+                  <CHECKNUM>311160000397</CHECKNUM>
+                  <REFNUM>311.160.000.397</REFNUM>
+                  <MEMO>Banco 24 Horas - 28/12 20:25 TERM. TECBAN 0031116</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151228120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-40.00</TRNAMT>
+                  <FITID>20151228140001</FITID>
+                  <CHECKNUM>311160000399</CHECKNUM>
+                  <REFNUM>311.160.000.399</REFNUM>
+                  <MEMO>Banco 24 Horas - 28/12 20:29 TERM. TECBAN 0031116</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151228120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.00</TRNAMT>
+                  <FITID>2015122815000</FITID>
+                  <CHECKNUM>620801011112</CHECKNUM>
+                  <REFNUM>893.620.801.011.112</REFNUM>
+                  <MEMO>Tarifa SMS - Mês Anterior - Tarifa referente a 10/12/2015</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>7218.87</TRNAMT>
+                  <FITID>2015122907218870</FITID>
+                  <CHECKNUM>000000252072</CHECKNUM>
+                  <REFNUM>252.072</REFNUM>
+                  <MEMO>Recebimento de Proventos - SERVICO FEDERAL DE PROCESSAMENTO DE DA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20151231120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-100.00</TRNAMT>
+                  <FITID>201512311100000</FITID>
+                  <CHECKNUM>329890006307</CHECKNUM>
+                  <REFNUM>329.890.006.307</REFNUM>
+                  <MEMO>Banco 24 Horas - 31/12 10:45 TERM. TECBAN 0032989</MEMO>
+               </STMTTRN>
+            </BANKTRANLIST>
+            <LEDGERBAL>
+               <BALAMT>7130.01</BALAMT>
+               <DTASOF>20151231120000[-3:BRT]</DTASOF>
+            </LEDGERBAL>
+         </STMTRS>
+      </STMTTRNRS>
+   </BANKMSGSRSV1>
+</OFX>

@@ -191,7 +191,7 @@ function gerarLinhas(id, categorias, title, series) {
         },
 
         tooltip: {
-            valueSuffix: 'R$'
+            valuepreffix: 'R$'
         },
         legend: {
             layout: 'vertical',

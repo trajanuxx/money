@@ -1,0 +1,843 @@
+OFXHEADER:100DATA:OFXSGMLVERSION:102SECURITY:NONEENCODING:USASCIICHARSET:1252COMPRESSION:NONEOLDFILEUID:NONENEWFILEUID:NONE<OFX>
+   <SIGNONMSGSRSV1>
+      <SONRS>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <DTSERVER>20160526120000[-3:BRT]</DTSERVER>
+         <LANGUAGE>POR</LANGUAGE>
+         <FI>
+            <ORG>Banco do Brasil</ORG>
+            <FID>1</FID>
+         </FI>
+      </SONRS>
+   </SIGNONMSGSRSV1>
+   <BANKMSGSRSV1>
+      <STMTTRNRS>
+         <TRNUID>1</TRNUID>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <STMTRS>
+            <CURDEF>BRL</CURDEF>
+            <BANKACCTFROM>
+               <BANKID>1</BANKID>
+               <BRANCHID>3475-4</BRANCHID>
+               <ACCTID>32346-2</ACCTID>
+               <ACCTTYPE>CHECKING</ACCTTYPE>
+            </BANKACCTFROM>
+            <BANKTRANLIST>
+               <DTSTART>20160129120000[-3:BRT]</DTSTART>
+               <DTEND>20160229120000[-3:BRT]</DTEND>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160201120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-36.63</TRNAMT>
+                  <FITID>20160201136630</FITID>
+                  <CHECKNUM>000000145981</CHECKNUM>
+                  <REFNUM>145.981</REFNUM>
+                  <MEMO>Compra com Cartão - 30/01 12:46         CHURRASQUIM</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160201120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-15.83</TRNAMT>
+                  <FITID>20160201115830</FITID>
+                  <CHECKNUM>000000595213</CHECKNUM>
+                  <REFNUM>595.213</REFNUM>
+                  <MEMO>Compra com Cartão - 01/02 12:52 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160201120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-8.00</TRNAMT>
+                  <FITID>2016020118000</FITID>
+                  <CHECKNUM>000000843537</CHECKNUM>
+                  <REFNUM>843.537</REFNUM>
+                  <MEMO>Compra com Cartão - 01/02 17:36 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160201120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10000.00</TRNAMT>
+                  <FITID>20160201110000000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>521.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 01/02 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160201120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-0.33</TRNAMT>
+                  <FITID>201602011330</FITID>
+                  <CHECKNUM>000391100701</CHECKNUM>
+                  <REFNUM>391.100.701</REFNUM>
+                  <MEMO>Cobrança de I.O.F.</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160202120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>100.00</TRNAMT>
+                  <FITID>201602020100000</FITID>
+                  <CHECKNUM>002661638953</CHECKNUM>
+                  <REFNUM>2.661.638.953</REFNUM>
+                  <MEMO>Depósito Online</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160202120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-0.92</TRNAMT>
+                  <FITID>201602021920</FITID>
+                  <CHECKNUM>000000148143</CHECKNUM>
+                  <REFNUM>148.143</REFNUM>
+                  <MEMO>Compra com Cartão - 02/02 13:22 BOULEVARD BRASILI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160202120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-49.35</TRNAMT>
+                  <FITID>20160202149350</FITID>
+                  <CHECKNUM>000000275739</CHECKNUM>
+                  <REFNUM>275.739</REFNUM>
+                  <MEMO>Compra com Cartão - 02/02 21:02 DROGARIA ROSARIO FL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160202120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-4.80</TRNAMT>
+                  <FITID>2016020214800</FITID>
+                  <CHECKNUM>000000769579</CHECKNUM>
+                  <REFNUM>769.579</REFNUM>
+                  <MEMO>Compra com Cartão - 02/02 20:38 BOULEVARD BRASILIA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160203120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-17.99</TRNAMT>
+                  <FITID>20160203117990</FITID>
+                  <CHECKNUM>000000148645</CHECKNUM>
+                  <REFNUM>148.645</REFNUM>
+                  <MEMO>Compra com Cartão - 03/02 13:30 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160203120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-6.00</TRNAMT>
+                  <FITID>2016020316000</FITID>
+                  <CHECKNUM>000000260620</CHECKNUM>
+                  <REFNUM>260.620</REFNUM>
+                  <MEMO>Compra com Cartão - 03/02 16:50 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160203120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-55.00</TRNAMT>
+                  <FITID>20160203155000</FITID>
+                  <CHECKNUM>000000368435</CHECKNUM>
+                  <REFNUM>368.435</REFNUM>
+                  <MEMO>Compra com Cartão - 03/02 19:00 KELCIO DA SILVA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160203120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-27.00</TRNAMT>
+                  <FITID>20160203127000</FITID>
+                  <CHECKNUM>000000674328</CHECKNUM>
+                  <REFNUM>674.328</REFNUM>
+                  <MEMO>Compra com Cartão - 03/02 20:38 FAST NATURE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-19.37</TRNAMT>
+                  <FITID>20160204119370</FITID>
+                  <CHECKNUM>000000146773</CHECKNUM>
+                  <REFNUM>146.773</REFNUM>
+                  <MEMO>Compra com Cartão - 04/02 12:59 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-8.00</TRNAMT>
+                  <FITID>2016020418000</FITID>
+                  <CHECKNUM>000000259273</CHECKNUM>
+                  <REFNUM>259.273</REFNUM>
+                  <MEMO>Compra com Cartão - 04/02 16:27 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160204120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-42.00</TRNAMT>
+                  <FITID>20160204142000</FITID>
+                  <CHECKNUM>000000369108</CHECKNUM>
+                  <REFNUM>369.108</REFNUM>
+                  <MEMO>Compra com Cartão - 04/02 19:11 LAURINDO PEREIRA RAM</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160205120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2.00</TRNAMT>
+                  <FITID>2016020512000</FITID>
+                  <CHECKNUM>000000077544</CHECKNUM>
+                  <REFNUM>77.544</REFNUM>
+                  <MEMO>Compra com Cartão - 05/02 16:00 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160205120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-61.60</TRNAMT>
+                  <FITID>20160205161600</FITID>
+                  <CHECKNUM>000000352071</CHECKNUM>
+                  <REFNUM>352.071</REFNUM>
+                  <MEMO>Compra com Cartão - 05/02 20:17 QUIOSQUE DA CODORNA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160205120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.95</TRNAMT>
+                  <FITID>20160205110950</FITID>
+                  <CHECKNUM>361100297681</CHECKNUM>
+                  <REFNUM>870.361.100.297.681</REFNUM>
+                  <MEMO>Tarifa Pacote de Serviços - Tarifa referente a 05/02/2016</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160205120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-0.53</TRNAMT>
+                  <FITID>201602051530</FITID>
+                  <CHECKNUM>000511058916</CHECKNUM>
+                  <REFNUM>511.058.916</REFNUM>
+                  <MEMO>Cobrança de Juros</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-11.80</TRNAMT>
+                  <FITID>20160210111800</FITID>
+                  <CHECKNUM>000000136150</CHECKNUM>
+                  <REFNUM>136.150</REFNUM>
+                  <MEMO>Compra com Cartão - 06/02 10:02 MORADA MINEIRA CONFE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-33.90</TRNAMT>
+                  <FITID>20160210133900</FITID>
+                  <CHECKNUM>000000245719</CHECKNUM>
+                  <REFNUM>245.719</REFNUM>
+                  <MEMO>Compra com Cartão - 07/02 12:41         CHURRASQUIM</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-22.00</TRNAMT>
+                  <FITID>20160210122000</FITID>
+                  <CHECKNUM>000000376825</CHECKNUM>
+                  <REFNUM>376.825</REFNUM>
+                  <MEMO>Compra com Cartão - 07/02 21:20 IGREJA BATISTA DO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-132.75</TRNAMT>
+                  <FITID>201602101132750</FITID>
+                  <CHECKNUM>000000679825</CHECKNUM>
+                  <REFNUM>679.825</REFNUM>
+                  <MEMO>Compra com Cartão - 07/02 22:10 DROGARIA ROSARIO FL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-52.47</TRNAMT>
+                  <FITID>20160210152470</FITID>
+                  <CHECKNUM>000000779944</CHECKNUM>
+                  <REFNUM>779.944</REFNUM>
+                  <MEMO>Compra com Cartão - 09/02 22:12 EMPORIO DA PIZZA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-32.80</TRNAMT>
+                  <FITID>20160210132800</FITID>
+                  <CHECKNUM>000000869822</CHECKNUM>
+                  <REFNUM>869.822</REFNUM>
+                  <MEMO>Compra com Cartão - 10/02 19:23 FAST NATURE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20160210130000</FITID>
+                  <CHECKNUM>928573185182</CHECKNUM>
+                  <REFNUM>100.928.573.185.182</REFNUM>
+                  <MEMO>Saque no TAA - 10/02 09:28 SOP-SOBRADINHO-BSB</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160210120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-738.24</TRNAMT>
+                  <FITID>201602101738240</FITID>
+                  <CHECKNUM>000092275172</CHECKNUM>
+                  <REFNUM>92.275.172</REFNUM>
+                  <MEMO>Pagto cartão crédito</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160211120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.50</TRNAMT>
+                  <FITID>2016021115500</FITID>
+                  <CHECKNUM>000000157717</CHECKNUM>
+                  <REFNUM>157.717</REFNUM>
+                  <MEMO>Compra com Cartão - 11/02 16:01 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160211120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.64</TRNAMT>
+                  <FITID>20160211130640</FITID>
+                  <CHECKNUM>000000280421</CHECKNUM>
+                  <REFNUM>280.421</REFNUM>
+                  <MEMO>Compra com Cartão - 11/02 22:20 DROGARIA ROSARIO FL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160212120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.00</TRNAMT>
+                  <FITID>2016021215000</FITID>
+                  <CHECKNUM>000000050006</CHECKNUM>
+                  <REFNUM>50.006</REFNUM>
+                  <MEMO>Compra com Cartão - 12/02 16:38 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-19.69</TRNAMT>
+                  <FITID>20160215119690</FITID>
+                  <CHECKNUM>000000022627</CHECKNUM>
+                  <REFNUM>22.627</REFNUM>
+                  <MEMO>Compra com Cartão - 15/02 13:08 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-51.33</TRNAMT>
+                  <FITID>20160215151330</FITID>
+                  <CHECKNUM>000000145414</CHECKNUM>
+                  <REFNUM>145.414</REFNUM>
+                  <MEMO>Compra com Cartão - 13/02 12:36 REST CHAO GOIANO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.00</TRNAMT>
+                  <FITID>2016021515000</FITID>
+                  <CHECKNUM>000000200530</CHECKNUM>
+                  <REFNUM>200.530</REFNUM>
+                  <MEMO>Compra com Cartão - 15/02 17:13 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14.40</TRNAMT>
+                  <FITID>20160215114400</FITID>
+                  <CHECKNUM>000000246387</CHECKNUM>
+                  <REFNUM>246.387</REFNUM>
+                  <MEMO>Compra com Cartão - 13/02 12:53 PAPELARIA ANDERSS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-7.00</TRNAMT>
+                  <FITID>2016021517000</FITID>
+                  <CHECKNUM>000000635294</CHECKNUM>
+                  <REFNUM>635.294</REFNUM>
+                  <MEMO>Compra com Cartão - 14/02 19:31 EST. IGUATEMI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-18.00</TRNAMT>
+                  <FITID>20160215118000</FITID>
+                  <CHECKNUM>000000682304</CHECKNUM>
+                  <REFNUM>682.304</REFNUM>
+                  <MEMO>Compra com Cartão - 14/02 21:14 IGREJA BATISTA DO LA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-46.11</TRNAMT>
+                  <FITID>20160215146110</FITID>
+                  <CHECKNUM>000000700132</CHECKNUM>
+                  <REFNUM>700.132</REFNUM>
+                  <MEMO>Compra com Cartão - 14/02 22:03 DROGARIA ROSARIO FL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20160215130000</FITID>
+                  <CHECKNUM>000000760199</CHECKNUM>
+                  <REFNUM>760.199</REFNUM>
+                  <MEMO>Compra com Cartão - 15/02 09:10 AUTO POSTO MORADA DO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160215120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-130.00</TRNAMT>
+                  <FITID>201602151130000</FITID>
+                  <CHECKNUM>028282631598</CHECKNUM>
+                  <REFNUM>131.028.282.631.598</REFNUM>
+                  <MEMO>Saque no TAA - 13/02 10:28 SOP-SOBRADINHO-BSB</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160216120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-19.80</TRNAMT>
+                  <FITID>20160216119800</FITID>
+                  <CHECKNUM>000000599118</CHECKNUM>
+                  <REFNUM>599.118</REFNUM>
+                  <MEMO>Compra com Cartão - 16/02 13:05 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160216120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20160216130000</FITID>
+                  <CHECKNUM>000000638740</CHECKNUM>
+                  <REFNUM>638.740</REFNUM>
+                  <MEMO>Compra com Cartão - 16/02 13:49 CASCOL COMBUSTIVEIS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160216120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.00</TRNAMT>
+                  <FITID>2016021615000</FITID>
+                  <CHECKNUM>000000797623</CHECKNUM>
+                  <REFNUM>797.623</REFNUM>
+                  <MEMO>Compra com Cartão - 16/02 17:16 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20160217130000</FITID>
+                  <CHECKNUM>000000158177</CHECKNUM>
+                  <REFNUM>158.177</REFNUM>
+                  <MEMO>Compra com Cartão - 17/02 09:47 POSTO COMERCIAL UNB</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.00</TRNAMT>
+                  <FITID>20160217130001</FITID>
+                  <CHECKNUM>000000342995</CHECKNUM>
+                  <REFNUM>342.995</REFNUM>
+                  <MEMO>Compra com Cartão - 17/02 13:39 CIRANDA CULTURAL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1.18</TRNAMT>
+                  <FITID>2016021711180</FITID>
+                  <CHECKNUM>000000348593</CHECKNUM>
+                  <REFNUM>348.593</REFNUM>
+                  <MEMO>Compra com Cartão - 17/02 13:45 BOULEVARD BRASILIA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-23.50</TRNAMT>
+                  <FITID>20160217123500</FITID>
+                  <CHECKNUM>000000625838</CHECKNUM>
+                  <REFNUM>625.838</REFNUM>
+                  <MEMO>Compra com Cartão - 17/02 19:51 PAGSEGUROUOL*Dogo</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160217120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-13.50</TRNAMT>
+                  <FITID>20160217113500</FITID>
+                  <CHECKNUM>000000635526</CHECKNUM>
+                  <REFNUM>635.526</REFNUM>
+                  <MEMO>Compra com Cartão - 17/02 20:07 PAGSEGUROUOL*Dogo</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-18.66</TRNAMT>
+                  <FITID>20160218118660</FITID>
+                  <CHECKNUM>000000042308</CHECKNUM>
+                  <REFNUM>42.308</REFNUM>
+                  <MEMO>Compra com Cartão - 18/02 13:28 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-26.00</TRNAMT>
+                  <FITID>20160218126000</FITID>
+                  <CHECKNUM>000000325888</CHECKNUM>
+                  <REFNUM>325.888</REFNUM>
+                  <MEMO>Compra com Cartão - 18/02 19:28 FREDDISSIMO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160218120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2.40</TRNAMT>
+                  <FITID>2016021812400</FITID>
+                  <CHECKNUM>000000327545</CHECKNUM>
+                  <REFNUM>327.545</REFNUM>
+                  <MEMO>Compra com Cartão - 18/02 19:30 BRASILIA PARTIC PLAN</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160219120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-28.60</TRNAMT>
+                  <FITID>20160219128600</FITID>
+                  <CHECKNUM>000000205465</CHECKNUM>
+                  <REFNUM>205.465</REFNUM>
+                  <MEMO>Compra com Cartão - 19/02 22:42 PIZZARIA DOM FELIPE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160219120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-36.00</TRNAMT>
+                  <FITID>20160219136000</FITID>
+                  <CHECKNUM>000000668190</CHECKNUM>
+                  <REFNUM>668.190</REFNUM>
+                  <MEMO>Compra com Cartão - 19/02 13:10 ANA MARIA PEREIRA RA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.70</TRNAMT>
+                  <FITID>2016022215700</FITID>
+                  <CHECKNUM>000000159974</CHECKNUM>
+                  <REFNUM>159.974</REFNUM>
+                  <MEMO>Compra com Cartão - 22/02 19:41 WOK BRASILIA CULINAR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-93.17</TRNAMT>
+                  <FITID>20160222193170</FITID>
+                  <CHECKNUM>000000336679</CHECKNUM>
+                  <REFNUM>336.679</REFNUM>
+                  <MEMO>Compra com Cartão - 21/02 13:20 PEIXE NA REDE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-120.00</TRNAMT>
+                  <FITID>201602221120000</FITID>
+                  <CHECKNUM>000000340932</CHECKNUM>
+                  <REFNUM>340.932</REFNUM>
+                  <MEMO>Compra com Cartão - 20/02 10:21 BIRIGO  AUTO PECAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-38.90</TRNAMT>
+                  <FITID>20160222138900</FITID>
+                  <CHECKNUM>000000356194</CHECKNUM>
+                  <REFNUM>356.194</REFNUM>
+                  <MEMO>Compra com Cartão - 20/02 10:36 ELETRICA TAMOIO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-46.99</TRNAMT>
+                  <FITID>20160222146990</FITID>
+                  <CHECKNUM>000000371630</CHECKNUM>
+                  <REFNUM>371.630</REFNUM>
+                  <MEMO>Compra com Cartão - 20/02 10:50 DONA DE CASA SOBRADI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-22.00</TRNAMT>
+                  <FITID>20160222122000</FITID>
+                  <CHECKNUM>000000554498</CHECKNUM>
+                  <REFNUM>554.498</REFNUM>
+                  <MEMO>Compra com Cartão - 21/02 21:35 IGREJA BATISTA DO LA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-29.98</TRNAMT>
+                  <FITID>20160222129980</FITID>
+                  <CHECKNUM>000000588563</CHECKNUM>
+                  <REFNUM>588.563</REFNUM>
+                  <MEMO>Compra com Cartão - 22/02 07:38 DROGARIA ROSARIO FL</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-11.99</TRNAMT>
+                  <FITID>20160222111990</FITID>
+                  <CHECKNUM>000000589539</CHECKNUM>
+                  <REFNUM>589.539</REFNUM>
+                  <MEMO>Compra com Cartão - 22/02 07:42 DROGARIA LIDER</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-16.95</TRNAMT>
+                  <FITID>20160222116950</FITID>
+                  <CHECKNUM>000000788967</CHECKNUM>
+                  <REFNUM>788.967</REFNUM>
+                  <MEMO>Compra com Cartão - 22/02 13:23 BIO MUNDO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-0.84</TRNAMT>
+                  <FITID>201602221840</FITID>
+                  <CHECKNUM>000000790812</CHECKNUM>
+                  <REFNUM>790.812</REFNUM>
+                  <MEMO>Compra com Cartão - 22/02 13:25 BOULEVARD BRASILIA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160222120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-3.80</TRNAMT>
+                  <FITID>2016022213800</FITID>
+                  <CHECKNUM>000000805551</CHECKNUM>
+                  <REFNUM>805.551</REFNUM>
+                  <MEMO>Compra com Cartão - 22/02 13:43 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160223120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-8.00</TRNAMT>
+                  <FITID>2016022318000</FITID>
+                  <CHECKNUM>000000161382</CHECKNUM>
+                  <REFNUM>161.382</REFNUM>
+                  <MEMO>Compra com Cartão - 23/02 17:03 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160223120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-20.39</TRNAMT>
+                  <FITID>20160223120390</FITID>
+                  <CHECKNUM>000000417163</CHECKNUM>
+                  <REFNUM>417.163</REFNUM>
+                  <MEMO>Compra com Cartão - 23/02 12:45 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160223120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-29.50</TRNAMT>
+                  <FITID>20160223129500</FITID>
+                  <CHECKNUM>000000766698</CHECKNUM>
+                  <REFNUM>766.698</REFNUM>
+                  <MEMO>Compra com Cartão - 23/02 20:52 MC DONALDS  BST</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160223120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-7.65</TRNAMT>
+                  <FITID>2016022317650</FITID>
+                  <CHECKNUM>000000773519</CHECKNUM>
+                  <REFNUM>773.519</REFNUM>
+                  <MEMO>Compra com Cartão - 23/02 21:12 BRASILIA PARTIC PLAN</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160224120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1.12</TRNAMT>
+                  <FITID>2016022411120</FITID>
+                  <CHECKNUM>000000146899</CHECKNUM>
+                  <REFNUM>146.899</REFNUM>
+                  <MEMO>Compra com Cartão - 24/02 13:30 BOULEVARD BRASILIA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160224120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-29.30</TRNAMT>
+                  <FITID>20160224129300</FITID>
+                  <CHECKNUM>000000439423</CHECKNUM>
+                  <REFNUM>439.423</REFNUM>
+                  <MEMO>Compra com Cartão - 24/02 20:19 FAST NATURE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160225120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-31.18</TRNAMT>
+                  <FITID>20160225131180</FITID>
+                  <CHECKNUM>000000147145</CHECKNUM>
+                  <REFNUM>147.145</REFNUM>
+                  <MEMO>Compra com Cartão - 25/02 13:05 ANA MARIA PEREIRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160225120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-155.15</TRNAMT>
+                  <FITID>201602251155150</FITID>
+                  <CHECKNUM>000000205165</CHECKNUM>
+                  <REFNUM>205.165</REFNUM>
+                  <MEMO>Compra com Cartão - 25/02 23:05 FLAMINGO SHOPPING</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160225120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-7.00</TRNAMT>
+                  <FITID>2016022517000</FITID>
+                  <CHECKNUM>000000263383</CHECKNUM>
+                  <REFNUM>263.383</REFNUM>
+                  <MEMO>Compra com Cartão - 25/02 17:36 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160225120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1000.00</TRNAMT>
+                  <FITID>2016022511000000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 25/02 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160225120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-114.09</TRNAMT>
+                  <FITID>201602251114090</FITID>
+                  <CHECKNUM>000000022501</CHECKNUM>
+                  <REFNUM>22.501</REFNUM>
+                  <MEMO>Pagamento de Título - AMERICANAS.COM</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160225120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.00</TRNAMT>
+                  <FITID>2016022515000</FITID>
+                  <CHECKNUM>000092998663</CHECKNUM>
+                  <REFNUM>92.998.663</REFNUM>
+                  <MEMO>Tarifa SMS - Mês Anterior - Tarifa referente a 10/02/2016</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160226120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>300.00</TRNAMT>
+                  <FITID>201602260300000</FITID>
+                  <CHECKNUM>003000031122</CHECKNUM>
+                  <REFNUM>601.003.000.031.122</REFNUM>
+                  <MEMO>Transferência on line - 26/02 1003      31122-7 KATTIUCY SOUSA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160226120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-8.00</TRNAMT>
+                  <FITID>2016022618000</FITID>
+                  <CHECKNUM>000000261740</CHECKNUM>
+                  <REFNUM>261.740</REFNUM>
+                  <MEMO>Compra com Cartão - 26/02 17:09 ABADIA LANCHES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160226120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-79.80</TRNAMT>
+                  <FITID>20160226179800</FITID>
+                  <CHECKNUM>000000826543</CHECKNUM>
+                  <REFNUM>826.543</REFNUM>
+                  <MEMO>Compra com Cartão - 26/02 20:23 CAMICADO IBIRAPUERA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160226120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-8.00</TRNAMT>
+                  <FITID>2016022618001</FITID>
+                  <CHECKNUM>000000830189</CHECKNUM>
+                  <REFNUM>830.189</REFNUM>
+                  <MEMO>Compra com Cartão - 26/02 20:29 MB PARKING</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>5853.85</TRNAMT>
+                  <FITID>2016022905853850</FITID>
+                  <CHECKNUM>000000252072</CHECKNUM>
+                  <REFNUM>252.072</REFNUM>
+                  <MEMO>Recebimento de Proventos - SERVICO FEDERAL DE PROCESSAMENTO DE DA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-41.90</TRNAMT>
+                  <FITID>20160229141900</FITID>
+                  <CHECKNUM>000000137987</CHECKNUM>
+                  <REFNUM>137.987</REFNUM>
+                  <MEMO>Compra com Cartão - 27/02 10:21 PAPELARIA ANDERSSON</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-3.00</TRNAMT>
+                  <FITID>2016022913000</FITID>
+                  <CHECKNUM>000000138549</CHECKNUM>
+                  <REFNUM>138.549</REFNUM>
+                  <MEMO>Compra com Cartão - 27/02 10:42 ROMANA TINTAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-11.40</TRNAMT>
+                  <FITID>20160229111400</FITID>
+                  <CHECKNUM>000000183695</CHECKNUM>
+                  <REFNUM>183.695</REFNUM>
+                  <MEMO>Compra com Cartão - 29/02 23:14 BOULEVARD BRASILI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-45.50</TRNAMT>
+                  <FITID>20160229145500</FITID>
+                  <CHECKNUM>000000272046</CHECKNUM>
+                  <REFNUM>272.046</REFNUM>
+                  <MEMO>Compra com Cartão - 27/02 20:00 EMPORIO DA PIZZA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-38.26</TRNAMT>
+                  <FITID>20160229138260</FITID>
+                  <CHECKNUM>000000347961</CHECKNUM>
+                  <REFNUM>347.961</REFNUM>
+                  <MEMO>Compra com Cartão - 28/02 13:19         CHURRASQUIM</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-35.98</TRNAMT>
+                  <FITID>20160229135980</FITID>
+                  <CHECKNUM>000000634669</CHECKNUM>
+                  <REFNUM>634.669</REFNUM>
+                  <MEMO>Compra com Cartão - 29/02 09:37 SOLUCOES CABELEIR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-24.00</TRNAMT>
+                  <FITID>20160229124000</FITID>
+                  <CHECKNUM>000000769695</CHECKNUM>
+                  <REFNUM>769.695</REFNUM>
+                  <MEMO>Compra com Cartão - 29/02 19:21 CINEMA SEVERIANO RIB</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20160229120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-11.50</TRNAMT>
+                  <FITID>20160229111500</FITID>
+                  <CHECKNUM>000000873341</CHECKNUM>
+                  <REFNUM>873.341</REFNUM>
+                  <MEMO>Compra com Cartão - 29/02 20:22 CINEMA SEVERIANO RIB</MEMO>
+               </STMTTRN>
+            </BANKTRANLIST>
+            <LEDGERBAL>
+               <BALAMT>5760.52</BALAMT>
+               <DTASOF>20160229120000[-3:BRT]</DTASOF>
+            </LEDGERBAL>
+         </STMTRS>
+      </STMTTRNRS>
+   </BANKMSGSRSV1>
+</OFX>

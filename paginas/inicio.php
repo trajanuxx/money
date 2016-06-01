@@ -44,10 +44,10 @@
 
 
 
-<div class="row">
-	<div class="col-sm-12 ">
-		<div class="col-sm-2" style="background: #666; color:white"> Itens</div>
-		<div class="col-sm-10 itens" style="background: #666; color:white;">
+<div class="row" style="min-width: 900px !important;">
+	<div class="col-sm-12" style="min-width: 900px !important;">
+		<div class="col-sm-3" style="background: #666; color:white"> Itens</div>
+		<div class="col-sm-9 itens" style="background: #666; color:white;">
 			<div class="col-sm-1" style="color: white;"> JAN</div>
 			<div class="col-sm-1" style="color: white;"> FEV</div>
 			<div class="col-sm-1" style="color: white;"> MAR</div>
@@ -80,72 +80,53 @@
 
 
 	function iniciar() {
-
-		carregarValores({
-			consulta: "LISTAR_CATEGORIAS"
-		}, function(obj) {
-			$('.meses').html('');
-			var color = 'white';
-			if (obj) {
-				$.each(obj, function(index, value) {
-					if (value.tipo == "1") {
-						color = "#B0C4DE";
-					} else {
-						color = 'white';
-					}
-
-					var item = '';
-					item = item + '<div class="col-xs-2 col-md-2 col-sm-2" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left"><span> <a href="#" data-toggle="tooltip" data-placement="top" title="0" id="media_' + value.id + '">' + value.descricao + '</a></span></div>';
-					item = item + '<div class="col-xs-10 col-md-10 col-sm-10 itens" style="border: 1px #ccc solid;background: ' + color + ';height: 22px; text-overflow: ellipsis;">';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=01&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_01 item_' + value.id + '" > 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=02&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_02 item_' + value.id + '"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=03&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_03 item_' + value.id + '"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=04&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_04 item_' + value.id + '"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=05&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_05 item_' + value.id + '"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=06&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_06 item_' + value.id + '"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=07&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_07 item_' + value.id + '"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=08&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_08 item_' + value.id + '"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=09&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_09 item_' + value.id + '">0</a></div>  	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=10&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_10 item_' + value.id + '"> 0 </a></div>';
-					item = item + '		<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=11&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class=" item_' + value.id + '_11 item_' + value.id + '"> 0</a></div>	<div class="col-xs-1 col-md-1 col-sm-1 "><a href="#paginas/detalhes.php?mes=12&ano=' + $('#ano').val() + '&tipo=' + value.id + '" class="item_' + value.id + '_12 item_' + value.id + '"> 0 </a></div>';
-					item = item + '</div>';
-
-					$('.meses').append(item);
+		$("#label_status").html("<img src='/money/img/popup.gif' width='20px'>Aguarde... Atualizando registros!!");
 					carregarValores({
-						consulta: "LISTAR_VALORES",
-						parametro: $('#ano').val() + ',' + value.id
-					}, function(obj) {
-						numeros(obj, value.id)
-					});
-				});
-			}
+								consulta: "LISTAR_VALORES_ANO_DETALHES",
+								parametro: $('#ano').val() 
+							}, function(obj) {
+                 $('.meses').html("");
+									$.each(obj, function(index, value) {
+											if (value.tipo == "1") {
+												color = "#B0C4DE";
+											} else {
+												color = 'white';
+											}
+											var item = '';
+											item = item + '<div class="col-xs-2 col-md-2 col-sm-2" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left"><span> <a href="#" data-toggle="tooltip" data-placement="top" title="0" id="media_' + value.id + '">' + value.descricao + '</a></span></div>';
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left">' + retVal(value.media) + '</div>';
+											item = item + '<div class="col-xs-9 col-md-9 col-sm-9 itens" style="border: 1px #ccc solid;background: ' + color + ';height: 22px; text-overflow: ellipsis;">';
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=01&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["1"])+'</a></div>';	
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=02&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["2"])+'</a></div>';
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=03&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["3"])+'</a></div>';	
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=04&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["4"])+'</a></div>';
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=05&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["5"])+'</a></div>';	
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=06&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["6"])+'</a></div>';
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=07&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["7"])+'</a></div>';	
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=08&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["8"])+'</a></div>';
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=09&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["9"])+'</a></div>';  	
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=10&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["10"])+'</a></div>';
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=11&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["11"])+'</a></div>';	
+											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor"><a href="#paginas/detalhes.php?mes=12&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["12"])+'</a></div>';
+											item = item + '</div>';
+								     $('.meses').append(item);
 
-
-		});
+							});
+								
+							
+								$("#label_status").html("Registros Atualizados!");
+						});
 
 	}
 
 
-
-	function numeros(obj, value) {
-    var Qtd=0;	
-		var Total=0;
-		$.each(obj, function(index, valor) {			
-			var item = parseFloat($(".item_" + value + "_" +valor.mes).html()) + parseFloat(valor.valor);
-			$(".item_" + value + "_" + valor.mes).html(item.toFixed(2));
-			Total = Total + parseFloat(item.toFixed(2));
-		});
+  function retVal(val){
+		if(val){
+			return val.replace('.',',');
+		}else{
+			return '0,00';
+		}
 		
-
-			$(".item_" + value).each(function( index ) {
-				if(parseInt($(this).html())!=0){
-					Qtd++;
-				}
-		});
-		
-		if ((Total)<0) Total=Total*(-1);		
-		$("#media_"+ value).attr("title", "Média R$"+((parseFloat(Total)/parseFloat(Qtd)).toFixed(2) ));
-
-		
-		
-		
-	} // end pagefunction
-
-	// run pagefunction
+	}
 	pagefunction();
 </script>

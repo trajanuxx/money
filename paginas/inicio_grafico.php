@@ -51,8 +51,27 @@
 
 	<div class = "row" >
 
-	<div class = "col-sm-12" id="grafico" > </div> </div>
+	<div class = "col-sm-12" id="grafico" > </div> 
+</div>
+	<div class = "row" >
 
+	<div class = "col-sm-6"  > 
+	 <h2>
+		 Top 10 Valores
+		</h2>
+		<div id="valores">
+			
+		</div>
+	</div>
+		<div class = "col-sm-6"  > 
+	 <h2>
+		 Top 10 Ocorrencias
+		</h2>
+			<div id="ocorrencias">
+				
+			</div>
+	</div>	
+</div>
 
 
 	<script type = "text/javascript" >
@@ -71,6 +90,7 @@
 
 
 	function iniciar() {
+		$("#label_status").html("<img src='/money/img/popup.gif' width='20px'>Aguarde... Atualizando registros!!");
 
 	var meses = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
 	var categorias = [];
@@ -93,7 +113,13 @@
 					if(!item){
 						item=0;
 					}
-					Vitem.push(parseFloat(parseFloat(item).toFixed(2)));
+					if(item<0){
+						 item = parseFloat(item)*(-1);
+						 }
+					console.log(i);
+					if(i!='media'){
+							Vitem.push(parseFloat(parseFloat(item).toFixed(2)));
+					}
 	      });
 			
 			
@@ -102,14 +128,16 @@
 				name: descricao,
 				data: Vitem
 			}
+			
 
 			categorias_dados.push(item);
 
 		});
 
-		console.log(categorias_dados);
+	
 
-		gerarLinhas("grafico", meses, 'Informações de Gastos ', categorias_dados)
+		gerarLinhas("grafico", meses, 'Informações Gerais de Gastos ', categorias_dados)
+		$("#label_status").html("Registros Atualizados!");
 
 	}, false);
 

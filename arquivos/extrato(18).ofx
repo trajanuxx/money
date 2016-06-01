@@ -1,0 +1,186 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+    <SIGNONMSGSRSV1>
+        <SONRS>
+            <STATUS>
+                <CODE>0
+                <SEVERITY>INFO
+            </STATUS>
+            <DTSERVER>20160526222613[-3:GMT]
+            <LANGUAGE>ENG
+            <FI>
+                <ORG>SANTANDER
+                <FID>SANTANDER
+            </FI>
+        </SONRS>
+    </SIGNONMSGSRSV1>
+    <BANKMSGSRSV1>
+        <STMTTRNRS>
+            <TRNUID>1
+            <STATUS>
+                <CODE>0
+                <SEVERITY>INFO
+            </STATUS>
+            <STMTRS>
+                <CURDEF>BRL
+                <BANKACCTFROM>
+                    <BANKID>033
+                    <ACCTID>0816010147699
+                    <ACCTTYPE>CHECKING
+                </BANKACCTFROM>
+                <BANKTRANLIST>
+                    <DTSTART>20160526222613[-3:GMT]
+                    <DTEND>20160526222613[-3:GMT]
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160401000000[-3:GMT]
+                        <TRNAMT>             -0.67
+                        <FITID>00022605
+                        <CHECKNUM>00022605
+                        <PAYEEID>0
+                        <MEMO>IOF IMPOSTO OPERACOES FINANCEIRAS  PERIODO: 01/03 A 31/03/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160401000000[-3:GMT]
+                        <TRNAMT>             -1.51
+                        <FITID>00032605
+                        <CHECKNUM>00032605
+                        <PAYEEID>0
+                        <MEMO>IOF ADICIONAL - AUTOMATICO         PERIODO: 01/03 A 31/03/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160407000000[-3:GMT]
+                        <TRNAMT>            -33.70
+                        <FITID>00042605
+                        <CHECKNUM>00042605
+                        <PAYEEID>0
+                        <MEMO>JUROS SALDO UTILIZ ATE LIMITE      PERIODO: 07/03 A 06/04/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160411000000[-3:GMT]
+                        <TRNAMT>           -321.93
+                        <FITID>00052605
+                        <CHECKNUM>00052605
+                        <PAYEEID>0
+                        <MEMO>DEBITO AUTOM MENSALIDADE TV A CABO NET SERVICOS             
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160411000000[-3:GMT]
+                        <TRNAMT>             -5.56
+                        <FITID>00174404
+                        <CHECKNUM>00174404
+                        <PAYEEID>0
+                        <MEMO>PAGAMENTO CARTAO CREDITO BCE       11/04 17:44 CARTAO MASTER
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160411000000[-3:GMT]
+                        <TRNAMT>            -16.65
+                        <FITID>00174449
+                        <CHECKNUM>00174449
+                        <PAYEEID>0
+                        <MEMO>PAGAMENTO CARTAO CREDITO BCE       11/04 17:44 CARTAO MASTER
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160411000000[-3:GMT]
+                        <TRNAMT>            380,00
+                        <FITID>00700040
+                        <CHECKNUM>00700040
+                        <PAYEEID>0
+                        <MEMO>DOC E RECEBIDO-TIT DISTINTA        KATTIUCY SOUSA COSTA     
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160412000000[-3:GMT]
+                        <TRNAMT>            -23.40
+                        <FITID>00092605
+                        <CHECKNUM>00092605
+                        <PAYEEID>0
+                        <MEMO>TARIFA MENSALIDADE PACOTE SERVICOS  MARCO / 2016            
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160502000000[-3:GMT]
+                        <TRNAMT>             -0.04
+                        <FITID>00102605
+                        <CHECKNUM>00102605
+                        <PAYEEID>0
+                        <MEMO>IOF IMPOSTO OPERACOES FINANCEIRAS  PERIODO: 01/04 A 30/04/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160502000000[-3:GMT]
+                        <TRNAMT>             -0.20
+                        <FITID>00112605
+                        <CHECKNUM>00112605
+                        <PAYEEID>0
+                        <MEMO>IOF ADICIONAL - AUTOMATICO         PERIODO: 01/04 A 30/04/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160509000000[-3:GMT]
+                        <TRNAMT>             -3.53
+                        <FITID>00122605
+                        <CHECKNUM>00122605
+                        <PAYEEID>0
+                        <MEMO>JUROS SALDO UTILIZ ATE LIMITE      PERIODO: 07/04 A 06/05/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160510000000[-3:GMT]
+                        <TRNAMT>           -324.54
+                        <FITID>00132605
+                        <CHECKNUM>00132605
+                        <PAYEEID>0
+                        <MEMO>DEBITO AUTOM MENSALIDADE TV A CABO NET SERVICOS             
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160510000000[-3:GMT]
+                        <TRNAMT>             -5.56
+                        <FITID>00142605
+                        <CHECKNUM>00142605
+                        <PAYEEID>0
+                        <MEMO>DEBITO AUT. FAT.CARTAO MASTER CARD FINAL 9375               
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160511000000[-3:GMT]
+                        <TRNAMT>            -23.40
+                        <FITID>00152605
+                        <CHECKNUM>00152605
+                        <PAYEEID>0
+                        <MEMO>TARIFA MENSALIDADE PACOTE SERVICOS  ABRIL / 2016            
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160520000000[-3:GMT]
+                        <TRNAMT>            -14.90
+                        <FITID>00162605
+                        <CHECKNUM>00162605
+                        <PAYEEID>0
+                        <MEMO>DEBITO AUT. FAT.CARTAO MASTER CARD FINAL 9772               
+                    </STMTTRN>
+                </BANKTRANLIST>
+                <LEDGERBAL>
+                    <BALAMT>           -394.77
+                    <DTASOF>20160526222613[-3:GMT]
+                </LEDGERBAL>
+            </STMTRS>
+        </STMTTRNRS>
+    </BANKMSGSRSV1>
+</OFX>

@@ -1,0 +1,123 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+    <SIGNONMSGSRSV1>
+        <SONRS>
+            <STATUS>
+                <CODE>0
+                <SEVERITY>INFO
+            </STATUS>
+            <DTSERVER>20160526222708[-3:GMT]
+            <LANGUAGE>ENG
+            <FI>
+                <ORG>SANTANDER
+                <FID>SANTANDER
+            </FI>
+        </SONRS>
+    </SIGNONMSGSRSV1>
+    <BANKMSGSRSV1>
+        <STMTTRNRS>
+            <TRNUID>1
+            <STATUS>
+                <CODE>0
+                <SEVERITY>INFO
+            </STATUS>
+            <STMTRS>
+                <CURDEF>BRL
+                <BANKACCTFROM>
+                    <BANKID>033
+                    <ACCTID>0816010147699
+                    <ACCTTYPE>CHECKING
+                </BANKACCTFROM>
+                <BANKTRANLIST>
+                    <DTSTART>20160526222708[-3:GMT]
+                    <DTEND>20160526222708[-3:GMT]
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160301000000[-3:GMT]
+                        <TRNAMT>             -0.55
+                        <FITID>00022605
+                        <CHECKNUM>00022605
+                        <PAYEEID>0
+                        <MEMO>IOF IMPOSTO OPERACOES FINANCEIRAS  PERIODO: 01/02 A 29/02/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160301000000[-3:GMT]
+                        <TRNAMT>             -1.20
+                        <FITID>00032605
+                        <CHECKNUM>00032605
+                        <PAYEEID>0
+                        <MEMO>IOF ADICIONAL - AUTOMATICO         PERIODO: 01/02 A 29/02/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160307000000[-3:GMT]
+                        <TRNAMT>            -47.87
+                        <FITID>00042605
+                        <CHECKNUM>00042605
+                        <PAYEEID>0
+                        <MEMO>JUROS SALDO UTILIZ ATE LIMITE      PERIODO: 07/02 A 06/03/16
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160310000000[-3:GMT]
+                        <TRNAMT>           -323.52
+                        <FITID>00052605
+                        <CHECKNUM>00052605
+                        <PAYEEID>0
+                        <MEMO>DEBITO AUTOM MENSALIDADE TV A CABO NET SERVICOS             
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160310000000[-3:GMT]
+                        <TRNAMT>             -5.56
+                        <FITID>00062605
+                        <CHECKNUM>00062605
+                        <PAYEEID>0
+                        <MEMO>DEBITO AUT. FAT.CARTAO MASTER CARD FINAL 9375               
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160311000000[-3:GMT]
+                        <TRNAMT>            -23.40
+                        <FITID>00072605
+                        <CHECKNUM>00072605
+                        <PAYEEID>0
+                        <MEMO>TARIFA MENSALIDADE PACOTE SERVICOS FEVEREIRO / 2016         
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160317000000[-3:GMT]
+                        <TRNAMT>            750,00
+                        <FITID>00082605
+                        <CHECKNUM>00082605
+                        <PAYEEID>0
+                        <MEMO>TED DIFERENTE TITULARIDADE CIP     KATTIUCY SOUSA COSTA     
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>OTHER
+                        <DTPOSTED>20160321000000[-3:GMT]
+                        <TRNAMT>            -14.90
+                        <FITID>00092605
+                        <CHECKNUM>00092605
+                        <PAYEEID>0
+                        <MEMO>DEBITO AUT. FAT.CARTAO MASTER CARD FINAL 9772               
+                    </STMTTRN>
+                </BANKTRANLIST>
+                <LEDGERBAL>
+                    <BALAMT>              0.82
+                    <DTASOF>20160526222708[-3:GMT]
+                </LEDGERBAL>
+            </STMTRS>
+        </STMTTRNRS>
+    </BANKMSGSRSV1>
+</OFX>

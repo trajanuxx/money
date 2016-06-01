@@ -24,9 +24,30 @@ class Geral {
 	}
 
 	public function listar($table, $colunas,$condicoes, $order) {
-		$result = $this -> conexao -> select(array('table' => $table,'colunas'=> $colunas, 'condition' => $condicoes, 'order' => $order));
-		return $result;
+		
+		$default = array (
+			'table' => $table,
+			'fields' => $colunas,
+			'condition' => $condicoes,
+			'order' => $order,
+			
+		);
+		
+   	return $this -> conexao -> select($default);
 	}
+	public function listarDistinc($table, $colunas,$condicoes, $order,$distinct){
+		
+			$default = array (
+			'table' => $table,
+			'fields' => $colunas,
+			'condition' => $condicoes,
+			'order' => $order,
+			'distinct'=>$distinct
+			
+		);
+	return $this -> conexao -> selectDistinct($default);
+	}
+
 
 	public function deletar($tabela, $id) {
 		return $this->conexao->delete($tabela, 'id="' . $id.'"');
