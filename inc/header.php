@@ -144,17 +144,19 @@
 
 						<!-- logout button -->
 						<div id="logout" class="btn-header transparent pull-right">
-							<span> <a href="<?php echo APP_URL; ?>/login.php" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+							<span> <a href="<?php echo APP_URL; ?>/login.php" title="sair" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
 						</div>
 						<!-- end logout button -->
 
 	          <div id="upload" class="btn-header transparent pull-right">
-							<span> <a  title="Full Screen" ><i class="glyphicon glyphicon-upload" onclick="$('input:file:first').click()"></i></a> </span>
+							<span> <a  title="Enviar arquivos" ><i class="glyphicon glyphicon-upload" onclick="$('input:file:first').click()"></i></a> </span>
 						</div>
 						 <div id="process" class="btn-header transparent pull-right">
-							<span> <a  title="Full Screen" ><i class="glyphicon glyphicon-fire" onclick="processarInformacoes()"></i></a> </span>
+							<span> <a  title="Processar Informações" ><i class="glyphicon glyphicon-fire" onclick="processarInformacoes()"></i></a> </span>
 						</div>
-						
+						 <div id="process" class="btn-header transparent pull-right">
+							<span> <a  title="Entradas Rápidas"  href="paginas/detalhe_novo.php " data-toggle="modal" data-target="#remoteModal"  ><i class="glyphicon glyphicon-edit" ></i></a> </span>
+						</div>
 						 <div id="label_status" class="btn-header transparent pull-right" style="position: relative; top: 16px;">
 							 <span> </span>
 						 </div>
@@ -165,7 +167,12 @@
 
 			</div>
 
-
+		<div class="modal fade" id="remoteModal" data-backdrop="false" tabindex="9000" role="dialog" aria-labelledby="remoteModal" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
 					</div>
 					<!-- end pulled right: nav area -->
 

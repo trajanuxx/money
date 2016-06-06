@@ -116,6 +116,11 @@
 							
 								$("#label_status").html("Registros Atualizados!");
 						});
+		
+		
+				$("#label_status").html("<img src='/money/img/popup.gif' width='20px'>Aguarde... Atualizando registros!!");
+				
+	
 
 	}
 

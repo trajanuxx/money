@@ -40,6 +40,22 @@ define("LISTAR_VALORES_ANO_DETALHES","select
 
                                       ");
 
+define("MAIOR_QTD_GASTO_CATEGORIA","select tr.ano, tr.mes, tp.id, tp.descricao, count(1) as qtd
+                                      from tarefas tr
+                                        inner join tipo tp
+                                          on tr.tipo = tp.id
+                                          where ano ='".$parametro[0]."' and mes ='".$parametro[1]."'
+                                      group by tr.ano,tr.mes,tp.id
+                                      order by count(1) desc");
+
+define("MAIOR_VALOR_GASTO_CATEGORIA","select tr.ano, tr.mes, tp.id, tp.descricao, round((sum(valor)*(-1)),2) as valor
+                                      from tarefas tr
+                                        inner join tipo tp
+                                          on tr.tipo = tp.id
+                                          where ano ='".$parametro[0]."' and mes ='".$parametro[1]."'
+                                      group by tr.ano,tr.mes,tp.id
+                                      order by sum(valor) asc");
+
 
 define("LISTAR_VALORES_DETALHES","SELECT id,data, Item, tiporegistro ,valor FROM tarefas where ano =trim('".$parametro[0]."') and mes=trim('".$parametro[1] ."') and tipo =trim('".$parametro[2] ."')");
 define("LISTAR_REGRAS","SELECT tp.id,tp.descricao as regra, t.descricao as categoria, case when t.tipo =1 then 'Entrada' else 'Saida' end as tipo FROM tipo_palavras tp 

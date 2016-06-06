@@ -32,14 +32,7 @@ $page_nav = array(
 		"url" => "paginas/inicio.php",
 		"icon" => "fa-home"
 	)	,
-	"novo" => array(
-		"title" => "Registro Manual",
-		"url" => "paginas/detalhe_novo.php",
-		"icon" => "fa-home"
-	),"adm" => array(
-		"title" => "Adminstrativo",
-		"icon" => "fa-home",
-		"sub" => array(
+
 					"regras" => array(
 					"title" => "Regras",
 					"url" => "paginas/regras.php",
@@ -51,8 +44,8 @@ $page_nav = array(
 					"icon" => "fa-home"
 				),
 			  
-		)
-	)
+
+	
 );
 
 //configuration variables

@@ -80,7 +80,6 @@ function removerModal() {
 		$(".espera").modal('hide');
 		$(".modal-backdrop").fadeOut('slow');
 		$(".espera").fadeOut('slow');
-		$("#remoteModal, #remoteModalDetalhe").fadeOut('slow');
 		
 		
 		
@@ -336,5 +335,10 @@ function removerItens(dados, callback) {
 	});
 }
 
+
+$.ajaxSetup ({
+    // Disable caching of AJAX responses
+    cache: false
+});
 // INIT
 
