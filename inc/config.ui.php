@@ -43,7 +43,11 @@ $page_nav = array(
 					"url" => "paginas/categorias.php",
 					"icon" => "fa-home"
 				),
-			  
+			   "Arquivos" => array(
+					"title" => "Arquivos",
+					"url" => "paginas/arquivos.php",
+					"icon" => "fa-home"
+				),
 
 	
 );
