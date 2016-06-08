@@ -23,6 +23,7 @@ $now   = new DateTime();
 		<input type="hidden" class="form-control" name="agenciacontacartao" value="">
 		<input type="hidden" class="form-control" name="tiporegistro" value="">
 		<input type="hidden" class="form-control" name="identificacao" value="Inclusao Manual">
+			<input type="hidden" value="usuario" name="usuario" value="<?php echo $_SESSION["id_usuario"]?>">
 
 		<div class="form-group col-xs-12 col-sm-4 col-lg-4">
 			<label for="mes">Mes de Referência:</label>

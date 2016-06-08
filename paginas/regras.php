@@ -15,6 +15,7 @@
 
 <form id="categoria">
 	<input type="hidden" value="tipo_palavras" name="tabela">
+		<input type="hidden" value="usuario" name="usuario" value="<?php echo $_SESSION["id_usuario"]?>">
 <table class="col-sm-12">
 	<tr>
 		<td class="col-sm-6"><input type="text" class="form-control" name="descricao" placeholder="categoria"></td>

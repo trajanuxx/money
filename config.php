@@ -8,10 +8,7 @@ define("BANCO","trajanux");
 // host do banco
 define("HOST_BANCO","mysql.trajanux.com.br");
 
-// usuário do sistema
-define("USER","trajanux");
-// senha de acesso ao sistema
-define("PASSWORD","18maioneast");
+
 
 
 ?>

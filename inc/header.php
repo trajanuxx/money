@@ -74,7 +74,7 @@
 					<div id="logo-group">
 
 						<!-- PLACE YOUR LOGO HERE -->
-						<span id="logo"> Money </span>
+						<span id="logo"> Meu Porquinho </span>
 						<!-- END LOGO PLACEHOLDER -->
 
 			

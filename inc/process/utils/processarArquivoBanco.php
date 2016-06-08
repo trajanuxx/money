@@ -9,9 +9,11 @@ $path = $_SERVER['DOCUMENT_ROOT'] . 'money/arquivos/';
 $diretorio = dir($path);
   while($arquivo = $diretorio -> read()){
 	   if(($arquivo<>"undefined")&&($arquivo<>"..")&&($arquivo<>".")){
-		echo "processando arquivo ".$arquivo." ...<br>";	
- 		
-			processarArquivo($path."/".$arquivo);
+					echo "processando arquivo ".$arquivo." ...<br>";	
+					$item = explode("_",$arquivo);
+					if ($item[0]==$_SESSION["id_usuario"]){
+						processarArquivo($path."/".$arquivo);
+					}	 			
        }  
  echo $arquivo." processado...<br>";	   
 	  
@@ -45,6 +47,7 @@ function processarArquivo($arquivo) {
 			  "agenciacontacartao"=>getAgenciaContaCartao($data),
 			  "tiporegistro"=>getCartao($data),
 			  "identificacao"=>getId($value),
+			  "usuario"=>$_SESSION["id_usuario"],
 			
 		);
                // echo 'id--->';

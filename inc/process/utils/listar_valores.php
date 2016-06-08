@@ -35,11 +35,7 @@ if(!(isset($_REQUEST["consulta"])||$consulta != "")){
   echo '[]';
   return;
 }
-
-
-require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/consultas.php';
-
-
+require_once $_SERVER[DOCUMENT_ROOT].'/money/inc/data/consultas.php';
 $generico = new Geral();
 
 

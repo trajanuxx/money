@@ -28,6 +28,7 @@ Sugestão de Alteração:
 <input type="hidden" name="agenciacontacartao" value=""> 	
 <input type="hidden" name="tiporegistro" value=""> 	
 <input type="hidden" name="identificacao" value=""> 	
+	<input type="hidden" value="usuario" name="usuario" value="<?php echo $_SESSION["id_usuario"]?>">
 	
 	
 	
