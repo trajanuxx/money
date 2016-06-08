@@ -3,17 +3,19 @@
 require_once $_SERVER[DOCUMENT_ROOT].'money/config.php';
 require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/mysql.php';
 require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/geral.php';
-
+if (!isset($_SESSION)) {
+  session_start();
+}
 
 $path = $_SERVER['DOCUMENT_ROOT'] . 'money/arquivos/';
 $diretorio = dir($path);
   while($arquivo = $diretorio -> read()){
 	   if(($arquivo<>"undefined")&&($arquivo<>"..")&&($arquivo<>".")){
 					echo "processando arquivo ".$arquivo." ...<br>";	
-					$item = explode("_",$arquivo);
-					if ($item[0]==$_SESSION["id_usuario"]){
+				//	$item = explode("_",$arquivo);
+				//	if ($item[0]==$_SESSION["id_usuario"]){
 						processarArquivo($path."/".$arquivo);
-					}	 			
+				//	}	 			
        }  
  echo $arquivo." processado...<br>";	   
 	  
@@ -124,7 +126,7 @@ function getContaCartao($value){
 
 function getMes($value){
 	
-	if(getCartao()=="Cartão de Crédito"){
+	if(getCartao($value)=="Cartão de Crédito"){
 			$a = remover($value);
 			$a = split("<DTASOF>",$a);
 			$a =$a[1];

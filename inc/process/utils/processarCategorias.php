@@ -3,7 +3,9 @@ require_once $_SERVER[DOCUMENT_ROOT].'money/config.php';
 require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/mysql.php';
 require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/geral.php';
 
-
+if (!isset($_SESSION)) {
+  session_start();
+}
   $generico = new Geral();
 
  //zerando todos os registros
