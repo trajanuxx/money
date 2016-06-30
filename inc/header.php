@@ -151,9 +151,7 @@
 	          <div id="upload" class="btn-header transparent pull-right">
 							<span> <a  title="Enviar arquivos" ><i class="glyphicon glyphicon-upload" onclick="$('input:file:first').click()"></i></a> </span>
 						</div>
-							          <div id="upload" class="btn-header transparent pull-right">
-							<span> <a  title="Enviar arquivos"  href="#paginas/arquivos.php"><i class="glyphicon glyphicon-cloud-upload" ></i></a> </span>
-						</div>
+
 						 <div id="process" class="btn-header transparent pull-right">
 							<span> <a  title="Processar Informações"  ><i class="glyphicon glyphicon-fire" onclick="processarInformacoes()"></i></a> </span>
 						</div>
