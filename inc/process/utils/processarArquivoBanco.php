@@ -3,6 +3,7 @@
 require_once $_SERVER[DOCUMENT_ROOT].'money/config.php';
 require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/mysql.php';
 require_once $_SERVER[DOCUMENT_ROOT].'money/inc/data/geral.php';
+
 if (!isset($_SESSION)) {
   session_start();
 }
@@ -51,7 +52,7 @@ function processarArquivo($arquivo) {
 			  "agenciacontacartao"=>getAgenciaContaCartao($data),
 			  "tiporegistro"=>getCartao($data),
 			  "identificacao"=>getId($value),
-			  "usuario"=>$_SESSION["usuario"],
+			  "usuario"=>$_SESSION["id_usuario"],
 			
 		);
                // echo 'id--->';
