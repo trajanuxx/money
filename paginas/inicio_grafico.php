@@ -65,7 +65,8 @@
 
 <div class="row">
 
-	<div class="col-sm-12" id="grafico"> </div>
+	<div class="col-sm-12" id="grafico_entrada"> </div>
+	<div class="col-sm-12" id="grafico_saida"> </div>
 </div>
 <br>
 		<div class="row">
@@ -164,7 +165,8 @@
 
 		var meses = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
 		var categorias = [];
-		var categorias_dados = [];
+		var categorias_dados_entradas = [];
+		var categorias_dados_saidas = [];
 		var i = 0;
 
 		carregarValores({
@@ -192,21 +194,27 @@
 					}
 				});
 
-
-
 				item = {
-					name: descricao,
-					data: Vitem
+						name: descricao,
+						data: Vitem
+						}
+							
+				if(valor.tipo=='1'){
+						categorias_dados_entradas.push(item);
+				}else{	
+					  if(descricao!='Investimentos'){
+							categorias_dados_saidas.push(item);
+						}
+						
 				}
-
-
-				categorias_dados.push(item);
+		
 
 			});
 
 
 
-			gerarLinhas("grafico", meses, 'Informações Gerais de Gastos ', categorias_dados)
+			gerarLinhas("grafico_entrada", meses, 'Informações de Entradas ', categorias_dados_entradas);
+			gerarLinhas("grafico_saida", meses, 'Informações de Saidas ', categorias_dados_saidas);
 			$("#label_status").html("Registros Atualizados!");
 
 		}, false);

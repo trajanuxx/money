@@ -1,3 +1,4 @@
 config.php
 arquivos/*.ofx
 arquivos_pessoais/files/*
+inc/config.ui.php

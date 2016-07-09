@@ -1,5 +1,7 @@
 <?php require_once("inc/init.php"); 
-
+if (!isset($_SESSION)) {
+  session_start();
+}
 
 ?>
 
@@ -28,7 +30,7 @@ Sugestão de Alteração:
 <input type="hidden" name="agenciacontacartao" value=""> 	
 <input type="hidden" name="tiporegistro" value=""> 	
 <input type="hidden" name="identificacao" value=""> 	
-	<input type="hidden" value="usuario" name="usuario" value="<?php echo $_SESSION["id_usuario"]?>">
+<input type="hidden"  name="usuario" value="<?php echo $_SESSION["id_usuario"]?>">
 	
 	
 	
@@ -41,6 +43,7 @@ Sugestão de Alteração:
   <div class="form-group col-xs-12 col-sm-4 col-lg-4">
     <label for="email">Descrição:</label>
     <input type="text" class="form-control" name="Item" id="Item">
+		 <input type="hidden" class="form-control" name="usuario" id="usuario" value="<?php echo $_SESSION["id_usuario"]?>">
   </div>
 
   <div class="form-group col-xs-12 col-sm-3 col-lg-4">

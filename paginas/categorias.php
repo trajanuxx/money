@@ -1,6 +1,8 @@
 <?php require_once("inc/init.php"); 
 
-
+if (!isset($_SESSION)) {
+  session_start();
+}
 
 ?>
 
