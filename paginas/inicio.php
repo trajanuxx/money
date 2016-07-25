@@ -1,6 +1,4 @@
-<?php require_once("inc/init.php"); 
-
-?>
+<?php require_once("inc/init.php");?>
 <style>
 	.itens div {
 		padding-left: 0;
@@ -14,35 +12,15 @@
 		text-align: right;
 	}
 </style>
-<!-- row -->
-
-
-	<!-- col -->
+<h1 class="page-title txt-color-blueDark">
 	
-		<h1 class="page-title txt-color-blueDark">
-			
-			<!-- PAGE HEADER -->
-			<i class="fa-fw fa fa-home"></i> 
-				Relatório Sintético 
-			<select  class="col-sm-2" onchange="iniciar()" id="ano" name="ano" style="float:right">
-	
-		  </select>
-		</h1>
+	<!-- PAGE HEADER -->
+	<i class="fa-fw fa fa-home"></i> 
+		Relatório Sintético 
+	<select  class="col-sm-2" onchange="iniciar()" id="ano" name="ano" style="float:right">
 
-
-
-
-
-
-<!-- end row -->
-
-<!--
-	The ID "widget-grid" will start to initialize all widgets below 
-	You do not need to use widgets if you dont want to. Simply remove 
-	the <section></section> and you can use wells or panels instead 
-	-->
-
-
+  </select>
+</h1>
 
 <div class="row" style="min-width: 900px !important;">
 	<div class="col-sm-12" style="min-width: 900px !important;">
@@ -52,7 +30,7 @@
 			<div class="col-sm-1" style="color: white;"> FEV</div>
 			<div class="col-sm-1" style="color: white;"> MAR</div>
 			<div class="col-sm-1" style="color: white;"> ABR</div>
-			<div class="col-sm-1" style="color: white;"> MAIO</div>
+			<div class="col-sm-1" style="color: white;"> MAI</div>
 			<div class="col-sm-1" style="color: white;"> JUN</div>
 			<div class="col-sm-1" style="color: white;"> JUL</div>
 			<div class="col-sm-1" style="color: white;"> AGO</div>
@@ -61,13 +39,9 @@
 			<div class="col-sm-1" style="color: white;"> NOV</div>
 			<div class="col-sm-1" style="color: white;"> DEZ</div>
 		</div>
-
-
 	</div>
 	<div class="col-sm-12 meses"></div>
 </div>
-
-
 
 <script type="text/javascript">
 	pageSetUp();
@@ -76,8 +50,6 @@
 				iniciar();
 	
 	};
-
-
 
 	function iniciar() {
 		$("#label_status").html("<img src='/money/img/popup.gif' width='20px'>Aguarde... Atualizando registros!!");
@@ -93,8 +65,6 @@
 												color = 'white';
 											}
 											var item = '';
-											item = item + '<div class="col-xs-2 col-md-2 col-sm-2" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left"><span> <a href="#" data-toggle="tooltip" data-placement="top" title="0" id="media_' + value.id + '">' + value.descricao + '</a></span></div>';
-											item = item + '<div class="col-xs-1 col-md-1 col-sm-1" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left">' + retVal(value.media) + '</div>';
 											item = item + '<div class="col-xs-9 col-md-9 col-sm-9 itens" style="border: 1px #ccc solid;background: ' + color + ';height: 22px; text-overflow: ellipsis;">';
 											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor mes1"><a href="#paginas/detalhes.php?mes=01&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["1"])+'</a></div>';	
 											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor mes2" ><a href="#paginas/detalhes.php?mes=02&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["2"])+'</a></div>';
@@ -112,49 +82,34 @@
 								     $('.meses').append(item);
 
 							});
-								
-							
 								$("#label_status").html("Registros Atualizados!");
 					    	colorir();
 						});
-		
-		
 				$("#label_status").html("<img src='/money/img/popup.gif' width='20px'>Aguarde... Atualizando registros!!");
-				
-	
-
-
 	}
 
-
 function colorir(){
-			$.each(	$(".valor a"), function(index, value) {
-		 
-			var d = new Date();
-      var n = d.getMonth();
-			console.log(n);
-			for(i=1;i<(n+2);i++){
-				if(parseInt($(value).html())==0){
-					if($(value).parent().hasClass('mes'+i)){
-						$(value).parent().css('background','#FCC9C9');
-					}
-				 
+		$.each(	$(".valor a"), function(index, value) {
+	 
+		var d = new Date();
+	    var n = d.getMonth();
+		console.log(n);
+		for(i=1;i<(n+2);i++){
+			if(parseInt($(value).html())==0){
+				if($(value).parent().hasClass('mes'+i)){
+					$(value).parent().css('background','#FCC9C9');
 				}
-			  		
 			}
-		
-
-		});
+		}
+	});
 }
 	
-	
-  function retVal(val){
+function retVal(val){
 		if(val){
 			return val.replace('.',',');
 		}else{
 			return '0,00';
 		}
-		
 	}
 	pagefunction();
 </script>
