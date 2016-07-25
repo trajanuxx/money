@@ -34,68 +34,17 @@ define("LISTAR_VALORES_ANO_DETALHES", "select
  from tipo as T
  where  usuario='".$_SESSION["id_usuario"]."' 
  group by T.id
- order by T.tipo desc,T.descricao
- union
- select 0 as id,'Receita'as descricao, 'R' as tipo,round(sum(valor),2)
-  from tarefas tar, tipo tip
-  where tar.tipo = tip.id 
-  and tar.ano = 2016
-  and tar.usuario = 1
-  and tip.tipo = 1
-  union
-  select 0 as id,'Despesa'as descricao, 'R' as tipo,round(sum(valor),2) as valor
-  from tarefas tar, tipo tip
-  where tar.tipo = tip.id 
-  and tar.ano = 2016
-  and tar.usuario = 1
-  and tip.tipo = 0
-  union
-  select 0 as id,'Saldo'as descricao, 'R' as tipo, 
-  (select round(sum(valor),2)
-  from tarefas tar, tipo tip
-  where tar.tipo = tip.id 
-  and tar.ano = 2016
-  and tar.usuario = 1
-  and tip.tipo = 1) -
-  (select round(sum(valor*-1),2)
-  from tarefas tar, tipo tip
-  where tar.tipo = tip.id 
-  and tar.ano = 2016
-  and tar.usuario = 1
-  and tip.tipo = 0)");
+ order by T.tipo desc,T.descricao");
 
-define("RESUMO", "
-  select 'Receita'as tipo,round(sum(valor),2) as valor
+define("RESUMO_RECEITA_DESPESA_GASTO", "
+  select tar.ano, tar.mes, 
+         round(coalesce(sum(case when tip.tipo = 1 then tar.valor else 0 end), 0), 2) as receita,
+         round(coalesce(sum(case when tip.tipo = 0 then tar.valor else 0 end), 0), 2) as despesa,
+         round(coalesce(sum(tar.valor), 0), 2) as saldo
   from tarefas tar, tipo tip
   where tar.tipo = tip.id 
-  and tar.ano = ".$parametro[0]."
-  and tar.mes = ".$parametro[1]."
   and tar.usuario = ".$_SESSION["id_usuario"]."
-  and tip.tipo = 1
-  union
-  select 'Despesa'as tipo,round(sum(valor),2) as valor
-  from tarefas tar, tipo tip
-  where tar.tipo = tip.id 
-  and tar.ano = ".$parametro[0]."
-  and tar.mes = ".$parametro[1]."
-  and tar.usuario = ".$_SESSION["id_usuario"]."
-  and tip.tipo = 0
-  union
-  select 'Saldo'as tipo, 
-  (select round(sum(valor),2)
-  from tarefas tar, tipo tip
-  where tar.tipo = tip.id 
-  and tar.ano = ".$parametro[0]."
-  and tar.mes = ".$parametro[1]."
-  and tar.usuario = ".$_SESSION["id_usuario"]."
-  and tip.tipo = 1) -
-  (select round(sum(valor*-1),2)
-  from tarefas tar, tipo tip
-  where tar.tipo = tip.id 
-  and tar.ano = ".$parametro[0]."
-  and tar.mes = ".$parametro[1]."
-  and tar.usuario = ".$_SESSION["id_usuario"]."
-  and tip.tipo = 0)");
+  group by tar.ano, tar.mes");
 
 define("MAIOR_QTD_GASTO_CATEGORIA", "select tr.ano, tr.mes, tp.id, tp.descricao, count(1) as qtd
   from tarefas tr
