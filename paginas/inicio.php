@@ -24,7 +24,7 @@
 
 <div class="row" style="min-width: 900px !important;">
 	<div class="col-sm-12" style="min-width: 900px !important;">
-		<div class="col-sm-3" style="background: #666; color:white"> Itens</div>
+		<div class="col-sm-3" style="background: #666; color:white"> Categoria</div>
 		<div class="col-sm-9 itens" style="background: #666; color:white;">
 			<div class="col-sm-1" style="color: white;"> JAN</div>
 			<div class="col-sm-1" style="color: white;"> FEV</div>
@@ -65,6 +65,7 @@
 												color = 'white';
 											}
 											var item = '';
+											item = item + '<div class="col-xs-2 col-md-2 col-sm-2" style="border: 1px #ccc solid; color: #800000;background: ' + color + ';height: 22px; text-overflow: ellipsis;  text-align:left"><span> <a href="#" data-toggle="tooltip" data-placement="top" title="0" id="media_' + value.id + '">' + value.descricao + '</a></span></div>';
 											item = item + '<div class="col-xs-9 col-md-9 col-sm-9 itens" style="border: 1px #ccc solid;background: ' + color + ';height: 22px; text-overflow: ellipsis;">';
 											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor mes1"><a href="#paginas/detalhes.php?mes=01&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["1"])+'</a></div>';	
 											item = item + '<div class="col-xs-1 col-md-1 col-sm-1 valor mes2" ><a href="#paginas/detalhes.php?mes=02&ano=' + $('#ano').val() + '&tipo=' + value.id + '" > '+retVal(value["2"])+'</a></div>';
