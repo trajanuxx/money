@@ -36,30 +36,72 @@ define("LISTAR_VALORES_ANO_DETALHES", "select
  group by T.id
  order by T.tipo desc,T.descricao");
 
-define("RESUMO_RECEITA_DESPESA_GASTO", "
+define("RELATORIO_RECEITA_DESPESA_INVESTIMENTO", "
   select tar.ano, tar.mes, 
-         round(coalesce(sum(case when tip.tipo = 1 then tar.valor else 0 end), 0), 2) as receita,
-         round(coalesce(sum(case when tip.tipo = 0 then tar.valor else 0 end), 0), 2) as despesa,
-         round(coalesce(sum(tar.valor), 0), 2) as saldo
+  round(coalesce(sum(case when tip.tipo = 1 then tar.valor else 0 end), 0), 2) as receita,
+  round(coalesce(sum(case when tip.tipo = 0 then tar.valor else 0 end), 0), 2) as despesa,
+  round(coalesce(sum(tar.valor), 0), 2) as saldo
+  round(coalesce(sum(case when tip.tipo = 2 then tar.valor else 0 end), 0), 2) as investimento,
+  round(coalesce(sum(case when tip.tipo = 0 then tar.valor else 0 end - case when tip.tipo = 2 then tar.valor else 0 end), 0), 2) as resultado
   from tarefas tar, tipo tip
   where tar.tipo = tip.id 
-  and tar.usuario = ".$_SESSION["id_usuario"]."
+  and tar.usuario = '".$_SESSION["id_usuario"]."'
   group by tar.ano, tar.mes");
 
-define("MAIOR_QTD_GASTO_CATEGORIA", "select tr.ano, tr.mes, tp.id, tp.descricao, count(1) as qtd
+define("RESUMO_RECEITA_DESPESA_INVESTIMENTO_POR_MES", "
+  select 'Receita' as agrupador, round(coalesce(sum(case when tip.tipo = 1 then tar.valor else 0 end), 0), 2) as valor
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = '".$parametro[0]."'
+  and tar.mes = '".$parametro[1]."'
+  and tar.usuario = '".$_SESSION["id_usuario"]."'
+  union
+  select 'Despesa', round(coalesce(sum(case when tip.tipo = 0 then tar.valor else 0 end), 0), 2)
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = '".$parametro[0]."'
+  and tar.mes = '".$parametro[1]."'
+  and tar.usuario = '".$_SESSION["id_usuario"]."'
+  union
+  select 'Saldo', round(coalesce(sum(tar.valor), 0), 2)
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = '".$parametro[0]."'
+  and tar.mes = '".$parametro[1]."'
+  and tar.usuario = '".$_SESSION["id_usuario"]."'
+  union
+  select 'Investimento', round(coalesce(sum(case when tip.id = 23 then tar.valor else 0 end), 0), 2)
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = '".$parametro[0]."'
+  and tar.mes = '".$parametro[1]."'
+  and tar.usuario = '".$_SESSION["id_usuario"]."'
+  union
+  select 'Resultado', round(coalesce(sum(case when tip.tipo = 0 then tar.valor else 0 end - case when tip.id = 23 then tar.valor else 0 end), 0), 2)
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = '".$parametro[0]."'
+  and tar.mes = '".$parametro[1]."'
+  and tar.usuario = '".$_SESSION["id_usuario"]);
+
+define("MAIOR_QTD_GASTO_CATEGORIA", "
+  select tr.ano, tr.mes, tp.id, tp.descricao, count(1) as qtd
   from tarefas tr
   inner join tipo tp
   on tr.tipo = tp.id
-  where ano ='".$parametro[0]."' and mes ='".$parametro[1]."'
+  where ano ='".$parametro[0]."'
+  and mes ='".$parametro[1]."'
   and tr.usuario='".$_SESSION["id_usuario"]."' 
   group by tr.ano,tr.mes,tp.id
   order by count(1) desc");
 
-define("MAIOR_VALOR_GASTO_CATEGORIA", "select tr.ano, tr.mes, tp.id, tp.descricao, round((sum(valor)*(-1)),2) as valor
+define("MAIOR_VALOR_GASTO_CATEGORIA", "
+  select tr.ano, tr.mes, tp.id, tp.descricao, round((sum(valor)*(-1)),2) as valor
   from tarefas tr
   inner join tipo tp
   on tr.tipo = tp.id
-  where ano ='".$parametro[0]."' and mes ='".$parametro[1]."'
+  where ano ='".$parametro[0]."'
+  and mes ='".$parametro[1]."'
   and tr.usuario='".$_SESSION["id_usuario"]."' 
   group by tr.ano,tr.mes,tp.id
   order by sum(valor) asc");
