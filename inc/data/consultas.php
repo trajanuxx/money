@@ -34,7 +34,35 @@ define("LISTAR_VALORES_ANO_DETALHES", "select
  from tipo as T
  where  usuario='".$_SESSION["id_usuario"]."' 
  group by T.id
- order by T.tipo desc,T.descricao");
+ order by T.tipo desc,T.descricao
+ union
+ select 0 as id,'Receita'as descricao, 'R' as tipo,round(sum(valor),2)
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = 2016
+  and tar.usuario = 1
+  and tip.tipo = 1
+  union
+  select 0 as id,'Despesa'as descricao, 'R' as tipo,round(sum(valor),2) as valor
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = 2016
+  and tar.usuario = 1
+  and tip.tipo = 0
+  union
+  select 0 as id,'Saldo'as descricao, 'R' as tipo, 
+  (select round(sum(valor),2)
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = 2016
+  and tar.usuario = 1
+  and tip.tipo = 1) -
+  (select round(sum(valor*-1),2)
+  from tarefas tar, tipo tip
+  where tar.tipo = tip.id 
+  and tar.ano = 2016
+  and tar.usuario = 1
+  and tip.tipo = 0)");
 
 define("RESUMO", "
   select 'Receita'as tipo,round(sum(valor),2) as valor
