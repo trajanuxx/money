@@ -63,7 +63,7 @@ select 'Despesa',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 09 group by tip.tipo) as '09',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 10 group by tip.tipo) as '10',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 11 group by tip.tipo) as '11',
-(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 12 group by tip.tipo) as '12'");
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 12 group by tip.tipo) as '12');
 
 
 define("RELATORIO_RECEITA_DESPESA_INVESTIMENTO", "
