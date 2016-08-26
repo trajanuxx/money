@@ -19,22 +19,51 @@ if (!isset($parametro)) {
 
 define("LISTAR_VALORES_ANO_DETALHES", "select 
  id,descricao,tipo,
- (select round(sum(valor),2) from tarefas where mes ='01' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '1',
- (select round(sum(valor),2) from tarefas where mes ='02' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'   ) as '2',
- (select round(sum(valor),2) from tarefas where mes ='03' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '3',
- (select round(sum(valor),2) from tarefas where mes ='04' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '4', 
- (select round(sum(valor),2) from tarefas where mes ='05' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '5',
- (select round(sum(valor),2) from tarefas where mes ='06' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '6',
- (select round(sum(valor),2) from tarefas where mes ='07' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '7',
- (select round(sum(valor),2) from tarefas where mes ='08' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '8',
- (select round(sum(valor),2) from tarefas where mes ='09' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '9' ,
- (select round(sum(valor),2) from tarefas where mes ='10' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '10',
- (select round(sum(valor),2) from tarefas where mes ='11' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '11',
- (select round(sum(valor),2) from tarefas where mes ='12' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."'  ) as '12'
+ (select round(sum(valor),2) from tarefas where mes ='01' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '1',
+ (select round(sum(valor),2) from tarefas where mes ='02' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '2',
+ (select round(sum(valor),2) from tarefas where mes ='03' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '3',
+ (select round(sum(valor),2) from tarefas where mes ='04' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '4', 
+ (select round(sum(valor),2) from tarefas where mes ='05' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '5',
+ (select round(sum(valor),2) from tarefas where mes ='06' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '6',
+ (select round(sum(valor),2) from tarefas where mes ='07' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '7',
+ (select round(sum(valor),2) from tarefas where mes ='08' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '8',
+ (select round(sum(valor),2) from tarefas where mes ='09' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '9' ,
+ (select round(sum(valor),2) from tarefas where mes ='10' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '10',
+ (select round(sum(valor),2) from tarefas where mes ='11' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '11',
+ (select round(sum(valor),2) from tarefas where mes ='12' and tipo =T.id and   ano = '".$parametro[0]."' and usuario='".$_SESSION["id_usuario"]."') as '12'
  from tipo as T
  where  usuario='".$_SESSION["id_usuario"]."' 
  group by T.id
- order by T.tipo desc,T.descricao");
+ order by T.tipo desc,T.descricao
+union
+select 'Receita',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 01 group by tip.tipo) as '01',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 02 group by tip.tipo) as '02',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 03 group by tip.tipo) as '03',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 04 group by tip.tipo) as '04',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 05 group by tip.tipo) as '05',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 06 group by tip.tipo) as '06',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 07 group by tip.tipo) as '07',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 08 group by tip.tipo) as '08',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 09 group by tip.tipo) as '09',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 10 group by tip.tipo) as '10',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 11 group by tip.tipo) as '11',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 12 group by tip.tipo) as '12'
+union
+select 'Despesa',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 01 group by tip.tipo) as '01',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 02 group by tip.tipo) as '02',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 03 group by tip.tipo) as '03',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 04 group by tip.tipo) as '04',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 05 group by tip.tipo) as '05',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 06 group by tip.tipo) as '06',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 07 group by tip.tipo) as '07',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 08 group by tip.tipo) as '08',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 09 group by tip.tipo) as '09',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 10 group by tip.tipo) as '10',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 11 group by tip.tipo) as '11',
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 12 group by tip.tipo) as '12'
+");
 
 define("RELATORIO_RECEITA_DESPESA_INVESTIMENTO", "
   select tar.ano, tar.mes, 
