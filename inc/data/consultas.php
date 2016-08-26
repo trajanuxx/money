@@ -34,9 +34,10 @@ define("LISTAR_VALORES_ANO_DETALHES", "select
  from tipo as T
  where  usuario='".$_SESSION["id_usuario"]."' 
  group by T.id
- order by T.tipo desc,T.descricao
-union
-select 'Receita',
+ order by T.tipo desc,T.descricao");
+
+define("TOTAL_RECEITA_DESPESA", "select 
+'Receita',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 01 group by tip.tipo) as '01',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 02 group by tip.tipo) as '02',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 1 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 03 group by tip.tipo) as '03',
@@ -62,8 +63,8 @@ select 'Despesa',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 09 group by tip.tipo) as '09',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 10 group by tip.tipo) as '10',
 (select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 11 group by tip.tipo) as '11',
-(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 12 group by tip.tipo) as '12'
-");
+(select round(sum(valor),2) from tarefas tar inner join tipo tip where tar.tipo = tip.id and tip.tipo = 0 and usuario='".$_SESSION["id_usuario"]."' and tar.ano = '".$parametro[0]."' and tar.mes = 12 group by tip.tipo) as '12');
+
 
 define("RELATORIO_RECEITA_DESPESA_INVESTIMENTO", "
   select tar.ano, tar.mes, 
